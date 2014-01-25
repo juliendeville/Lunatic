@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TristesseScript : MonoBehaviour {
-	public GameObject[] disableItems;
+public class TriggerEcureuilScript : MonoBehaviour {
 	public GameObject Player;
-
+	public Vector3 destPlayer;
 	private Controller ctrlPlayer;
+	
 	private Transform tr;
 	private GameObject go;
 	
@@ -27,12 +27,10 @@ public class TristesseScript : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D( Collider2D other ) {
-		Debug.Log( "Tristesse colli :" + other.tag );
+		Debug.Log( "TriggerEcureil colli :" + other.tag );
 		if( other.tag == "Player" ) {
-			ctrlPlayer.emo = Emotion.Tristesse;
-			for( int i=0; i< disableItems.Length; i++ ) {
-				disableItems[i].SetActive(false);
-			}
+			ctrlPlayer.emo = Emotion.Colere;
+			ctrlPlayer.Move( destPlayer, true );
 		}
 	}
 }

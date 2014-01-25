@@ -27,6 +27,8 @@ public class PlanteScript : MonoBehaviour {
 	void Effect( Emotion emo ) {
 		//test émotion euphorie
 		if( emo == Emotion.Euphorie ) { 
+			
+			Debug.Log (":D  " );
 			//desactive la petite plante
 			PlanteFinale.SetActive( true );
 			// active la grande

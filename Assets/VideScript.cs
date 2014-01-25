@@ -3,9 +3,10 @@ using System.Collections;
 
 public class VideScript : MonoBehaviour {
 	public GameObject Player;
-	public GameObject[] revealItems;
+	public GameObject[] enableItems;
+	public GameObject[] disableItems;
+
 	private Controller ctrlPlayer;
-	
 	private Transform tr;
 	private GameObject go;
 	
@@ -30,8 +31,11 @@ public class VideScript : MonoBehaviour {
 		Debug.Log( "Angoisse colli :" + other.tag );
 		if( other.tag == "Player" ) {
 			ctrlPlayer.emo = Emotion.Angoisse;
-			for( int i=0; i< revealItems.Length; i++ ) {
-				revealItems[i].SetActive(true);
+			for( int i=0; i< enableItems.Length; i++ ) {
+				enableItems[i].SetActive(true);
+			}
+			for( int i=0; i< disableItems.Length; i++ ) {
+				disableItems[i].SetActive(false);
 			}
 		}
 	}

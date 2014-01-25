@@ -42,7 +42,7 @@ public class Controller : MonoBehaviour {
 				bIsButtonDown = false;
 				waitForUp = false;
 			}
-		} else if (bIsButtonDown)
+		} else if (bIsButtonDown && iTween.Count() == 0)
 		{
 			waitForUp = true;
 			//position in game
@@ -52,9 +52,9 @@ public class Controller : MonoBehaviour {
 			//si on touche
 			if(hit.collider != null) {
 				//les objets qui ont des actions
-				oldObjet = objet;
 				if( hit.collider.tag == "Action") {
 					objet = hit.collider.gameObject;
+					Debug.Log( objet.name );
 					Move( new Vector2( objet.transform.position.x, tr.position.y ), true );
 				} else { // le reste : décor, zones actives, etc
 					objet = null;
@@ -67,16 +67,19 @@ public class Controller : MonoBehaviour {
 
 	//fonction qui nous déplace
 	public void Move( Vector2 to, bool onlyX ) {
-
+		
+		oldObjet = objet;
 		if( to.x == tr.position.x && to.y == tr.position.y ){
 			EndMove();
 		} else {
-			if( iTween.Count() > 0 ) {
+			/*
+			if( iTween.Count() > 0 && oldObjet != null ) {
 				GameObject tempObjet = objet;
 				objet = oldObjet;
 				EndMove();
 				objet = tempObjet;
 			}
+			*/
 			Debug.Log ("Target Position: " + to.ToString());
 			if( onlyX ) {
 				iTween.MoveTo( go, iTween.Hash( "x", to.x, "easing", "linear", "oncomplete", "EndMove" ) );
@@ -95,6 +98,7 @@ public class Controller : MonoBehaviour {
 	}
 
 	void EndMove() {
+		Debug.Log ("Target arrived " );
 		//on envoi l'event qu'on est arrivé au pieds de l'objet à activer, on envoi aussi l'émotion actuelle
 		if( objet != null ) {
 			objet.SendMessage( "Effect", emo );
