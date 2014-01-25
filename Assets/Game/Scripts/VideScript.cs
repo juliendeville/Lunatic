@@ -6,7 +6,7 @@ public class VideScript : MonoBehaviour {
 	public GameObject[] enableItems;
 	public GameObject[] disableItems;
 
-	private Controller ctrlPlayer;
+	private PlayerScript ctrlPlayer;
 	private Transform tr;
 	private GameObject go;
 	
@@ -14,7 +14,7 @@ public class VideScript : MonoBehaviour {
 		//mettre en cache les variables
 		tr = this.transform;
 		go = this.gameObject;
-		ctrlPlayer = Player.GetComponent<Controller>();
+		ctrlPlayer = Player.GetComponent<PlayerScript>();
 	}
 	
 	// Use this for initialization

@@ -8,7 +8,7 @@ public enum Emotion {
 	Angoisse
 }
 
-public class Controller : MonoBehaviour {
+public class PlayerScript : MonoBehaviour {
 	public Emotion emo;
 
 	private GameObject go;

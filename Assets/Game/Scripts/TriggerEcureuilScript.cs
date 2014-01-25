@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChampiScript : MonoBehaviour {
+public class TriggerEcureuilScript : MonoBehaviour {
 	public GameObject Player;
-	private Controller ctrlPlayer;
+	public Vector3 destPlayer;
+	private PlayerScript ctrlPlayer;
 	
 	private Transform tr;
 	private GameObject go;
@@ -12,7 +13,7 @@ public class ChampiScript : MonoBehaviour {
 		//mettre en cache les variables
 		tr = this.transform;
 		go = this.gameObject;
-		ctrlPlayer = Player.GetComponent<Controller>();
+		ctrlPlayer = Player.GetComponent<PlayerScript>();
 	}
 	
 	// Use this for initialization
@@ -26,13 +27,10 @@ public class ChampiScript : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D( Collider2D other ) {
-		Debug.Log( "Champi colli :" + other.tag );
-	}
-	
-	void Effect( Emotion emo ) {
-		//test émotion angoisse
-		if( emo == Emotion.Angoisse ) { 
-			ctrlPlayer.emo = Emotion.Euphorie;
+		Debug.Log( "TriggerEcureil colli :" + other.tag );
+		if( other.tag == "Player" ) {
+			ctrlPlayer.emo = Emotion.Colere;
+			ctrlPlayer.Move( destPlayer, true );
 		}
 	}
 }

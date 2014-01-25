@@ -7,7 +7,7 @@ public class PlanteFinishScript : MonoBehaviour {
 
 	private Transform tr;
 	private GameObject go;
-	private Controller ctrlPlayer;
+	private PlayerScript ctrlPlayer;
 	private Rigidbody2D riPlayer;
 	private Transform trPlayer;
 	private bool EffectDone = false;
@@ -20,7 +20,7 @@ public class PlanteFinishScript : MonoBehaviour {
 		tr = this.transform;
 		go = this.gameObject;
 		trPlayer = Player.transform;
-		ctrlPlayer = Player.GetComponent<Controller>();
+		ctrlPlayer = Player.GetComponent<PlayerScript>();
 		riPlayer = Player.GetComponent<Rigidbody2D>();
 		bcPlateforme = Plateforme.GetComponent<BoxCollider2D>();
 	}
