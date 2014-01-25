@@ -105,4 +105,7 @@ public class PlayerScript : MonoBehaviour {
 		}
 	}
 
+	private void _Move( ){
+	}
+
 }
