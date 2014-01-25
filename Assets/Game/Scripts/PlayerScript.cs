@@ -10,6 +10,7 @@ public enum Emotion {
 
 public class PlayerScript : MonoBehaviour {
 	public Emotion emo;
+	public float speed = 1.0f;
 
 	private GameObject go;
 	private Transform tr;
@@ -19,6 +20,11 @@ public class PlayerScript : MonoBehaviour {
 	private GameObject oldObjet;
 	private bool waitForUp = false;
 	private Camera cam2D;
+	private Vector3 target;
+
+	private bool moving;
+	private float lastSqrMag;
+	private Vector3 desiredVelocity;
 
 	void Awake() {
 		//mettre en cache les variables
@@ -63,7 +69,31 @@ public class PlayerScript : MonoBehaviour {
 			}
 		}
 	
+		//movement
+		// check the current sqare magnitude
+		float sqrMag = (target - tr.position).sqrMagnitude;
+		
+		// check this against the lastSqrMag
+		// if this is greater than the last,
+		// rigidbody has reached target and is now moving past it
+		if ( sqrMag > lastSqrMag )
+		{
+			// rigidbody has reached target and is now moving past it
+			// stop the rigidbody by setting the velocity to zero
+			desiredVelocity = Vector3.zero;
+			moving = false;
+			EndMove();
+		} 
+		
+		// make sure you update the lastSqrMag
+		lastSqrMag = sqrMag;
    	}
+
+	void FixedUpdate() 
+	{
+		if ( moving )
+			rb.velocity = desiredVelocity;
+	}
 
 	//fonction qui nous déplace
 	public void Move( Vector2 to, bool onlyX ) {
@@ -81,11 +111,14 @@ public class PlayerScript : MonoBehaviour {
 			}
 			*/
 			Debug.Log ("Target Position: " + to.ToString());
+			_Move( to, onlyX );
+			/*
 			if( onlyX ) {
 				iTween.MoveTo( go, iTween.Hash( "x", to.x, "easing", "linear", "oncomplete", "EndMove" ) );
 			} else {
 				iTween.MoveTo( go, iTween.Hash( "x", to.x, "y", to.y, "easing", "linear", "oncomplete", "EndMove" ) );
 			}
+			*/
 		}
 	}
 
@@ -105,7 +138,15 @@ public class PlayerScript : MonoBehaviour {
 		}
 	}
 
-	private void _Move( ){
+	private void _Move( Vector2 to, bool onlyX ) {
+		moving = true;
+		target = to;
+		target.z = tr.position.z;
+		if( onlyX ) {
+			target.y = tr.position.y;
+		}
+		desiredVelocity = (target - tr.position).normalized * speed;
+		lastSqrMag = Mathf.Infinity;
 	}
 
 }
