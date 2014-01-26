@@ -3,14 +3,14 @@ using System.Collections;
 
 public class PlanteFinishScript : EmoBaseScript {
 	public GameObject Player;
-<<<<<<< HEAD
+
 	public GameObject Plateforme;
 	
 	public Vector3 scaFinale;
 	public float duration = 2.0f;
-=======
+
 	public GameObject[] Plateformes;
->>>>>>> d32e14e7c3b8a9c6df473ea9e3ce66bd2db839ea
+
 
 	private PlayerScript ctrlPlayer;
 	private Rigidbody2D riPlayer;
