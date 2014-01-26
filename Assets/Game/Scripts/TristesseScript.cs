@@ -1,29 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TristesseScript : MonoBehaviour {
+public class TristesseScript : EmoBaseScript {
 	public GameObject[] disableItems;
 	public GameObject Player;
 
 	private PlayerScript ctrlPlayer;
-	private Transform tr;
-	private GameObject go;
 	
-	void Awake() {
+	public override void Awake() {
+		base.Awake();
 		//mettre en cache les variables
-		tr = this.transform;
-		go = this.gameObject;
 		ctrlPlayer = Player.GetComponent<PlayerScript>();
-	}
-	
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 	
 	void OnTriggerEnter2D( Collider2D other ) {

@@ -236,5 +236,23 @@
 			<IncludedPrefetchFiles />
 			<ExternalSources />
 		</SoundBank>
+		<SoundBank Id="4017023971" Language="SFX">
+			<ShortName>Bank_SFX</ShortName>
+			<Path>Bank_SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1285425410" Name="EVENT_SFX_Bat_Scream_Play" />
+				<Event Id="4289308455" Name="EVENT_SFX_Whoosh_Transition_Play" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="1051956659" Language="SFX">
+					<ShortName>SFX\SFX_Cave_Bat_Scream_01.wav</ShortName>
+					<Path>sfx\sfx\sfx_cave_bat_scream_01_ddc98ef4.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
