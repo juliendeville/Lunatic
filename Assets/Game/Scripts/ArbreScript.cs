@@ -7,6 +7,7 @@ public class ArbreScript : EmoBaseScript {
 	public float duration = 1.0f;
 	public GameObject[] enableItems;
 	public GameObject[] disableItems;
+	public GameObject player;
 
 	private bool done = false;
 
@@ -40,7 +41,9 @@ public class ArbreScript : EmoBaseScript {
 		if( _emo == Emotion.Colere ) { 
 			done = true;
 			Debug.Log ("arbre killed  " );
-			
+
+			player.GetComponent<PlayerAnimationScript>().Play("Attack");
+
 			for( int i=0; i< enableItems.Length; i++ ) {
 				enableItems[i].SetActive(true);
 			}
