@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class AK
 {
     public class EVENTS
@@ -248,6 +247,7 @@ public class AK
 
 }// public class AK
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -511,6 +511,9 @@ public class AK
 
 =======
 =======
+=======
+
+>>>>>>> a79ad41bdcbe5473ddb2a18591a1cfe7c0ba34d0
 public class AK
 {
     public class EVENTS
@@ -759,6 +762,3 @@ public class AK
     } // public class EXTERNAL_SOURCES
 
 }// public class AK
-
->>>>>>> parent of 1038ee9... correction wwise + scene
->>>>>>> 4e2c135e222557266bc5d964cd0e880d1fc46f39
