@@ -247,6 +247,7 @@ public class AK
 
 }// public class AK
 
+<<<<<<< HEAD
 
 public class AK
 {
@@ -496,5 +497,6 @@ public class AK
     } // public class EXTERNAL_SOURCES
 
 }// public class AK
+=======
+>>>>>>> 1038ee99bb5957fffa5f9c07d9bdb9cff0d9cd4a
 
->>>>>>> 4e2c135e222557266bc5d964cd0e880d1fc46f39
