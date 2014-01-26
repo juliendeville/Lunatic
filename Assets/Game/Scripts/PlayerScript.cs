@@ -62,6 +62,14 @@ public class PlayerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if( Input.GetKey(KeyCode.A ) )
+			emo = Emotion.Angoisse;
+		if( Input.GetKey(KeyCode.Z ) )
+			emo = Emotion.Colere;
+		if( Input.GetKey(KeyCode.E ) )
+			emo = Emotion.Euphorie;
+		if( Input.GetKey(KeyCode.R ) )
+			emo = Emotion.Tristesse;
 		//check touch/click
 		bool bIsButtonDown = Input.GetMouseButtonDown(0) || ( Input.touchCount == 1 && Input.touches[0].phase == TouchPhase.Began );
 		if( waitForUp ) {
@@ -156,7 +164,7 @@ public class PlayerScript : MonoBehaviour {
 
 	void OnCollisionEnter2D( Collision2D col ) {
 		//on arrete le mouvement si on rencontre un mur
-		if( col.collider.tag == "Wall" ){
+		if( col.collider.tag == "Wall" ) {
 			//iTween.Stop();
 			EndMove();
 		}
