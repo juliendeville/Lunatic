@@ -89,7 +89,7 @@ public class PlayerScript : MonoBehaviour {
 				}
 			}
 		}
-		
+
 		if( moving ) {
 			float sqrMag = (target - transform.position).sqrMagnitude;
 			if ( sqrMag > lastSqrMag )
@@ -103,12 +103,26 @@ public class PlayerScript : MonoBehaviour {
 			// make sure you update the lastSqrMag
 			lastSqrMag = sqrMag;
 		}
+
 	
    	}
 
 	void FixedUpdate() 
 	{
 		if( moving ) {
+			/*
+			float sqrMag = (target - transform.position).sqrMagnitude;
+			if ( sqrMag > lastSqrMag )
+			{
+				// rigidbody has reached target and is now moving past it
+				// stop the rigidbody by setting the velocity to zero
+				desiredVelocity = Vector3.zero;
+				EndMove();
+			} 
+			
+			// make sure you update the lastSqrMag
+			lastSqrMag = sqrMag;
+			*/
 			rb.velocity = desiredVelocity;
 		}
 	}
@@ -143,7 +157,7 @@ public class PlayerScript : MonoBehaviour {
 	void OnCollisionEnter2D( Collision2D col ) {
 		//on arrete le mouvement si on rencontre un mur
 		if( col.collider.tag == "Wall" ){
-			iTween.Stop();
+			//iTween.Stop();
 			EndMove();
 		}
 	}
@@ -151,6 +165,8 @@ public class PlayerScript : MonoBehaviour {
 	void EndMove() {
 		Debug.Log ("Target arrived " );
 		moving = false;
+		
+		rb.isKinematic = false;
 		//on envoi l'event qu'on est arrivé au pieds de l'objet à activer, on envoi aussi l'émotion actuelle
 		if( objet != null ) {
 			objet.SendMessage( "Effect", emo );
@@ -158,12 +174,15 @@ public class PlayerScript : MonoBehaviour {
 	}
 
 	private void _Move( Vector2 to, bool onlyX ){
+		lastSqrMag = Mathf.Infinity;
 		moving = true;
 		target = to;
 		target.z = tr.position.z;
-		if( onlyX ) 
+		if( onlyX ) {
 			target.y = tr.position.y;
-		lastSqrMag = Mathf.Infinity;
+		} else {
+			rb.isKinematic = true;
+		}
 		desiredVelocity = (target - tr.position).normalized * speed;
 	}
 

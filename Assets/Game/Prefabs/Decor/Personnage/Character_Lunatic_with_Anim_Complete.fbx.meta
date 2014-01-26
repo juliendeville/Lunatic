@@ -1,61 +1,56 @@
 fileFormatVersion: 2
-guid: d9fcd1f65b7e6004bb2ccc05643bdbe1
+guid: 5791a3f71d8c44b13a6d29679f62dd8a
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Camera
-    100004: Cylinder
-    100006: Cylinder_001
-    100008: Cylinder_002
-    100010: Cylinder_003
-    100012: Cylinder_004
-    100014: Icosphere
-    100016: Icosphere_001
-    100018: Icosphere_002
-    100020: Icosphere_003
-    100022: Lamp
-    400000: //RootNode
-    400002: Camera
-    400004: Cylinder
-    400006: Cylinder_001
-    400008: Cylinder_002
-    400010: Cylinder_003
-    400012: Cylinder_004
-    400014: Icosphere
-    400016: Icosphere_001
-    400018: Icosphere_002
-    400020: Icosphere_003
-    400022: Lamp
-    2300000: Cylinder
-    2300002: Cylinder_001
-    2300004: Cylinder_002
-    2300006: Cylinder_003
-    2300008: Cylinder_004
-    2300010: Icosphere
-    2300012: Icosphere_001
-    2300014: Icosphere_002
-    2300016: Icosphere_003
-    3300000: Cylinder
-    3300002: Cylinder_001
-    3300004: Cylinder_002
-    3300006: Cylinder_003
-    3300008: Cylinder_004
-    3300010: Icosphere
-    3300012: Icosphere_001
-    3300014: Icosphere_002
-    3300016: Icosphere_003
-    4300000: Cylinder_004
-    4300002: Icosphere_002
-    4300004: Icosphere_001
-    4300006: Cylinder_001
-    4300008: Icosphere
-    4300010: Cylinder
-    4300012: Cylinder_002
-    4300014: Cylinder_003
-    4300016: Icosphere_003
-    7400000: Default Take
+    100000: Avant_Bras_Droite
+    100002: Avant_Bras_gauche
+    100004: Bras_Droite
+    100006: Bras_Gauche
+    100008: Buste
+    100010: Buste_0
+    100012: Camera
+    100014: //RootNode
+    100016: Cuisse_Droite
+    100018: Cuisse_Gauche
+    100020: Lamp
+    100022: Main_Droite
+    100024: Main_Gauche
+    100026: Mollet_Droite
+    100028: Mollet_Gauche
+    100030: Pied_Droite
+    100032: Pied_Gauche
+    100034: Squelette
+    100036: Tete
+    100038: Ventre
+    100040: Ventre_0
+    400000: Avant_Bras_Droite
+    400002: Avant_Bras_gauche
+    400004: Bras_Droite
+    400006: Bras_Gauche
+    400008: Buste
+    400010: Buste_0
+    400012: Camera
+    400014: //RootNode
+    400016: Cuisse_Droite
+    400018: Cuisse_Gauche
+    400020: Lamp
+    400022: Main_Droite
+    400024: Main_Gauche
+    400026: Mollet_Droite
+    400028: Mollet_Gauche
+    400030: Pied_Droite
+    400032: Pied_Gauche
+    400034: Squelette
+    400036: Tete
+    400038: Ventre
+    400040: Ventre_0
+    4300000: Buste
+    4300002: Ventre
+    7400000: SqueletteAction_002
     9500000: //RootNode
+    13700000: Buste
+    13700002: Ventre
   materials:
     importMaterials: 1
     materialName: 0
