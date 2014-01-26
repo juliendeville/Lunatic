@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1285425410	EVENT_SFX_Bat_Scream_Play			\SFX\EVENT_SFX_Bat_Scream_Play	
+	4289308455	EVENT_SFX_Whoosh_Transition_Play			\SFX\EVENT_SFX_Whoosh_Transition_Play	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	784126832	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\SFX\SFX\SFX_Cave\SFX_Whoosh_Transition_Anxiety\Wwise Sine	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1051956659	SFX_Cave_Bat_Scream_01	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Windows\sfx\sfx\sfx_cave_bat_scream_01_ddc98ef4.wem		\Actor-Mixer Hierarchy\SFX\SFX\SFX_Cave\SFX_Cave_Bat_Scream_01		513088
+

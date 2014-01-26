@@ -1,32 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlanteScript : MonoBehaviour {
+public class PlanteScript : EmoBaseScript {
 	public GameObject PlanteFinale;
-
-
-	private Transform tr;
-	private GameObject go;
-
-	void Awake() {
+	
+	public override void Awake() {
+		base.Awake();
 		//mettre en cache les variables
-		tr = this.transform;
-		go = this.gameObject;
-	}
-
-	// Use this for initialization
-	void Start () {
-	
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public void SetEmo( Emotion emo ) {
+		base.SetEmo( emo );
+		
+		if( emo == Emotion.Colere ) {
+			//Ronces
+			
+		} else if( emo == Emotion.Euphorie ) {
+			//Lierre fleurie
+			
+		} else {
+			//Lierre
+			
+		}
 	}
-
-	void Effect( Emotion emo ) {
+	
+	public override void Effect( ) {
 		//test émotion euphorie
-		if( emo == Emotion.Euphorie ) { 
+		if( _emo == Emotion.Euphorie ) { 
 			
 			Debug.Log (":D  " );
 			//desactive la petite plante

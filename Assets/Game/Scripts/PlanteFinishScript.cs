@@ -1,12 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlanteFinishScript : MonoBehaviour {
+public class PlanteFinishScript : EmoBaseScript {
 	public GameObject Player;
 	public GameObject Plateforme;
 
-	private Transform tr;
-	private GameObject go;
 	private PlayerScript ctrlPlayer;
 	private Rigidbody2D riPlayer;
 	private Transform trPlayer;
@@ -15,28 +13,35 @@ public class PlanteFinishScript : MonoBehaviour {
 
 	private int i = 0;
 	
-	void Awake() {
+	public override void Awake() {
+		base.Awake();
 		//mettre en cache les variables
-		tr = this.transform;
-		go = this.gameObject;
 		trPlayer = Player.transform;
 		ctrlPlayer = Player.GetComponent<PlayerScript>();
 		riPlayer = Player.GetComponent<Rigidbody2D>();
 		bcPlateforme = Plateforme.GetComponent<BoxCollider2D>();
 	}
 
-	// Use this for initialization
-	void Start () {
-	
+	void Start() {
+		go.SetActive( false );
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public void SetEmo( Emotion emo ) {
+		base.SetEmo( emo );
+		
+		if( emo == Emotion.Colere ) {
+			//Ronces
+			
+		} else if( emo == Emotion.Euphorie ) {
+			//Lierre fleurie
+			
+		} else {
+			//Lierre
+			
+		}
 	}
-
 	
-	void Effect( Emotion emo ) {
+	public override void Effect( ) {
 		Debug.Log( "done = " + (EffectDone?"true":"false") );
 		if( EffectDone ) {
 			bcPlateforme.enabled = true;

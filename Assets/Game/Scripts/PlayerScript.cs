@@ -25,6 +25,7 @@ public class PlayerScript : MonoBehaviour {
 	private float lastSqrMag;
 	private Vector3 target;
 	private bool moving;
+	private EmoBaseScript[] emoBS;
 	
 	private Emotion _emo;
 	public Emotion emo {
@@ -32,14 +33,28 @@ public class PlayerScript : MonoBehaviour {
 			return _emo;
 		}
 		set {
-			if( value == Emotion.Angoisse )
+			for( int i = 0; i < emoBS.Length; i++ ) {
+				emoBS[ i ].SetEmo( value );
+			}
+
+			if( _emo == value )
+				return;
+			if( value == Emotion.Angoisse ){
 				AkSoundEngine.SetState( "ST_Emotions_Set", "ST_Emotions_Anxiety" );
-			if( value == Emotion.Colere )
+			}
+			if( value == Emotion.Colere ){
 				AkSoundEngine.SetState( "ST_Emotions_Set", "ST_Emotions_Anger" );
-			if( value == Emotion.Euphorie )
+			}
+			if( value == Emotion.Euphorie ){
 				AkSoundEngine.SetState( "ST_Emotions_Set", "ST_Emotions_Euphoria" );
-			if( value == Emotion.Tristesse )
+			}
+			if( value == Emotion.Tristesse ){
 				AkSoundEngine.SetState( "ST_Emotions_Set", "ST_Emotions_Sadness" );
+			}
+			if( _emo != null )
+				AkSoundEngine.PostEvent("EVENT_SFX_Whoosh_Transition_Play", go );
+
+
 			_emo = value;
 		}
 	}
@@ -49,6 +64,11 @@ public class PlayerScript : MonoBehaviour {
 		go = this.gameObject;
 		tr = this.transform;
 		rb = this.rigidbody2D;
+		GameObject[] actions = GameObject.FindGameObjectsWithTag("Action");
+		emoBS = new EmoBaseScript[actions.Length];
+		for( int i = 0; i < actions.Length; i++ ) {
+			emoBS[ i ] = actions[ i ].GetComponent<EmoBaseScript>();
+		}
 		cam2D = GameObject.Find("Cam2D").GetComponent<Camera>();
 		//sound init !
 
@@ -154,14 +174,11 @@ public class PlayerScript : MonoBehaviour {
 			}
 			*/
 			Debug.Log ("Target Position: " + to.ToString());
-			_Move( to, onlyX );
-			/*
 			if( onlyX ) {
-				iTween.MoveTo( go, iTween.Hash( "x", to.x, "easing", "linear", "oncomplete", "EndMove" ) );
+				_Move( to, onlyX );
 			} else {
 				iTween.MoveTo( go, iTween.Hash( "x", to.x, "y", to.y, "easing", "linear", "oncomplete", "EndMove" ) );
 			}
-			*/
 		}
 	}
 
@@ -169,7 +186,7 @@ public class PlayerScript : MonoBehaviour {
 		//on arrete le mouvement si on rencontre un mur
 		if( col.collider.tag == "Wall" ) {
 			//iTween.Stop();
-			EndMove();
+			//EndMove();
 		}
 	}
 
@@ -180,7 +197,7 @@ public class PlayerScript : MonoBehaviour {
 		rb.isKinematic = false;
 		//on envoi l'event qu'on est arrivé au pieds de l'objet à activer, on envoi aussi l'émotion actuelle
 		if( objet != null ) {
-			objet.SendMessage( "Effect", emo );
+			objet.SendMessage( "Effect" );
 		}
 	}
 

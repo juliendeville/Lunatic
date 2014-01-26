@@ -1,38 +1,43 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChampiScript : MonoBehaviour {
+public class ChampiScript : EmoBaseScript {
 	public GameObject Player;
 	private PlayerScript ctrlPlayer;
+
 	
-	private Transform tr;
-	private GameObject go;
-	
-	void Awake() {
+	public override void Awake() {
+		base.Awake();
 		//mettre en cache les variables
-		tr = this.transform;
-		go = this.gameObject;
 		ctrlPlayer = Player.GetComponent<PlayerScript>();
 	}
+
+	void Start() {
+		go.SetActive( false );
+	}
 	
-	// Use this for initialization
-	void Start () {
+	
+	public override void SetEmo( Emotion emo ) {
+		base.SetEmo( emo );
 		
+		if( emo == Emotion.Colere ) {
+			//arbre en feu avec particules
+			
+		} else {
+			//arbre de base
+			
+		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-	
-	void OnTriggerEnter2D( Collider2D other ) {
-		Debug.Log( "Champi colli :" + other.tag );
-	}
-	
-	void Effect( Emotion emo ) {
+	public override void Effect( ) {
 		//test émotion angoisse
-		if( emo == Emotion.Angoisse ) { 
+		if( _emo == Emotion.Angoisse ) { 
 			ctrlPlayer.emo = Emotion.Euphorie;
 		}
 	}
+/*	
+	void OnTriggerEnter2D( Collider2D other ) {
+		Debug.Log( "Champi colli :" + other.tag );
+	}
+	*/
 }
