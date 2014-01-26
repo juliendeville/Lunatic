@@ -4,7 +4,7 @@ using System.Collections;
 public class ArbreScript : EmoBaseScript {
 	public Vector3 posFinale;
 	public Vector3 rotFinale;
-	//public Vector3 scaFinale;
+	public Vector3 scaFinale;
 	public float duration = 1.0f;
 	public GameObject[] enableItems;
 	public GameObject[] disableItems;
@@ -26,7 +26,7 @@ public class ArbreScript : EmoBaseScript {
 		
 			iTween.MoveTo (go, posFinale, duration);
 			iTween.RotateTo (go, rotFinale, duration);
-			//	iTween.ScaleTo( go, scaFinale, duration );
+			iTween.ScaleTo( go, scaFinale, duration );
 	}
 
 	
@@ -65,7 +65,7 @@ public class ArbreScript : EmoBaseScript {
 			//remplacer par anim arbre kill ?
 			iTween.MoveTo( go, posFinale, duration);
 			iTween.RotateTo( go, rotFinale, duration );
-			//iTween.ScaleTo( go, scaFinale, duration );
+			iTween.ScaleTo( go, scaFinale, duration );
 		}
 	}
 }
