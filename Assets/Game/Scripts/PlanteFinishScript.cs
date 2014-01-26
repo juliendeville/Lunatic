@@ -3,16 +3,20 @@ using System.Collections;
 
 public class PlanteFinishScript : EmoBaseScript {
 	public GameObject Player;
+<<<<<<< HEAD
 	public GameObject Plateforme;
 	
 	public Vector3 scaFinale;
 	public float duration = 2.0f;
+=======
+	public GameObject[] Plateformes;
+>>>>>>> d32e14e7c3b8a9c6df473ea9e3ce66bd2db839ea
 
 	private PlayerScript ctrlPlayer;
 	private Rigidbody2D riPlayer;
 	private Transform trPlayer;
 	private bool EffectDone = false;
-	private BoxCollider2D bcPlateforme;
+	private BoxCollider2D[] bcPlateforme;
 
 	private int i = 0;
 	
@@ -22,7 +26,10 @@ public class PlanteFinishScript : EmoBaseScript {
 		trPlayer = Player.transform;
 		ctrlPlayer = Player.GetComponent<PlayerScript>();
 		riPlayer = Player.GetComponent<Rigidbody2D>();
-		bcPlateforme = Plateforme.GetComponent<BoxCollider2D>();
+		bcPlateforme = new BoxCollider2D[Plateformes.Length];
+		for( int i=0; i< Plateformes.Length; i++ ) {
+			bcPlateforme[i] = Plateformes[i].GetComponent<BoxCollider2D>();
+		}
 	}
 
 	void Start() {
@@ -47,12 +54,18 @@ public class PlanteFinishScript : EmoBaseScript {
 	public override void Effect( ) {
 		Debug.Log( "done = " + (EffectDone?"true":"false") );
 		if( EffectDone ) {
-			bcPlateforme.enabled = true;
+			for( int i=0; i< bcPlateforme.Length; i++ ) {
+				bcPlateforme[i].enabled = true;
+			}
 			riPlayer.WakeUp();
 			EffectDone = false;
 			return;
 		}
-		bcPlateforme.enabled = false;
+
+		for( int i=0; i< bcPlateforme.Length; i++ ) {
+			bcPlateforme[i].enabled = false;
+		}
+
 		riPlayer.Sleep();
 
 		EffectDone = true;

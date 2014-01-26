@@ -1,10 +1,17 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1285425410	EVENT_SFX_Bat_Scream_Play			\SFX\EVENT_SFX_Bat_Scream_Play	
+	2007361309	EVENT_SFX_Forest_Squirrel_Flee_Play			\SFX\EVENT_SFX_Forest_Squirrel_Flee_Play	
+	3386337421	EVENT_SFX_Forest_Squirrel_Squick_Play			\SFX\EVENT_SFX_Forest_Squirrel_Squick_Play	
 	4289308455	EVENT_SFX_Whoosh_Transition_Play			\SFX\EVENT_SFX_Whoosh_Transition_Play	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	784126832	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\SFX\SFX\SFX_Cave\SFX_Whoosh_Transition_Anxiety\Wwise Sine	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	270130351	SFX_Forest_Squirrel_Squick_03	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Mac\sfx\sfx\sfx_forest_squirrel_squick_03_ddc98ef4.wem		\Actor-Mixer Hierarchy\SFX\SFX\SFX_Cave\SFX_Forest_Squirrel_Squick\SFX_Forest_Squirrel_Squick_03		26636
+	286222705	SFX_Forest_Squirrel_Squick_04	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Mac\sfx\sfx\sfx_forest_squirrel_squick_04_ddc98ef4.wem		\Actor-Mixer Hierarchy\SFX\SFX\SFX_Cave\SFX_Forest_Squirrel_Squick\SFX_Forest_Squirrel_Squick_04		25020
+	409495942	SFX_Forest_Squirrel_Squick_01	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Mac\sfx\sfx\sfx_forest_squirrel_squick_01_ddc98ef4.wem		\Actor-Mixer Hierarchy\SFX\SFX\SFX_Cave\SFX_Forest_Squirrel_Squick\SFX_Forest_Squirrel_Squick_01		30292
+	415924312	SFX_Forest_Squirrel_Squick_02	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Mac\sfx\sfx\sfx_forest_squirrel_squick_02_ddc98ef4.wem		\Actor-Mixer Hierarchy\SFX\SFX\SFX_Cave\SFX_Forest_Squirrel_Squick\SFX_Forest_Squirrel_Squick_02		28636
+	834604187	SFX_Forest_Squirrel_Squick_05	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Mac\sfx\sfx\sfx_forest_squirrel_squick_05_ddc98ef4.wem		\Actor-Mixer Hierarchy\SFX\SFX\SFX_Cave\SFX_Forest_Squirrel_Squick\SFX_Forest_Squirrel_Squick_05		21722
 	1051956659	SFX_Cave_Bat_Scream_01	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Mac\sfx\sfx\sfx_cave_bat_scream_01_ddc98ef4.wem		\Actor-Mixer Hierarchy\SFX\SFX\SFX_Cave\SFX_Cave_Bat_Scream_01		513088
 

@@ -5,6 +5,7 @@ public class EcureuilScript : EmoBaseScript {
 	public GameObject Trigger;
 	public GameObject Arbre;
 	public GameObject Ecureuil;
+	public GameObject Projectile;
 	
 	public override void Awake() {
 		base.Awake();
@@ -18,7 +19,14 @@ public class EcureuilScript : EmoBaseScript {
 		if( emo == Emotion.Tristesse ) {
 			//l'ecureuil se cache
 			
+			AkSoundEngine.PostEvent("EVENT_SFX_Forest_Squirrel_Flee_Play", go );
 		} else {
+
+			transform.animation.Play("Attack");
+			GameObject newProjectile =(GameObject) Instantiate(Projectile,Projectile.transform.position,Quaternion.identity);
+			//newProjectile.GetComponentInChildren
+			iTween.MoveTo(newProjectile	,Vector3.forward,3);
+
 			//ecureuil qui caillasse
 			
 		}
