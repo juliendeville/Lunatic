@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Event	ID	Name			Wwise Object Path	Notes
 	1327221850	Resume_All_Global			\Default Work Unit\Resume_All_Global	
 	3368417626	Play_Markers_Test			\Default Work Unit\Play_Markers_Test	
@@ -7,13 +6,3 @@ Event	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	544694784	Markers_Test	D:\WwiseHome\1.Installers\Wwise_v2013.2.4_build_4836\SDK\samples\IntegrationDemo\WwiseProject\.cache\Mac\sfx\marker_test_001_61a1d6ac.wem		\Actor-Mixer Hierarchy\Default Work Unit\Markers_Test		134288
 
-=======
-Event	ID	Name			Wwise Object Path	Notes
-	1327221850	Resume_All_Global			\Default Work Unit\Resume_All_Global	
-	3368417626	Play_Markers_Test			\Default Work Unit\Play_Markers_Test	
-	3493516265	Pause_All_Global			\Default Work Unit\Pause_All_Global	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	544694784	Markers_Test	D:\WwiseHome\1.Installers\Wwise_v2013.2.4_build_4836\SDK\samples\IntegrationDemo\WwiseProject\.cache\Mac\sfx\marker_test_001_61a1d6ac.wem		\Actor-Mixer Hierarchy\Default Work Unit\Markers_Test		134288
-
->>>>>>> 4e2c135e222557266bc5d964cd0e880d1fc46f39

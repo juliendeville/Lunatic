@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4992D2A914EF6028006AEB4F /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4992D2A814EF6028006AEB4F /* CoreAudio.framework */; };
+		4992D2AC14EF6030006AEB4F /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4992D2AB14EF6030006AEB4F /* AudioUnit.framework */; };
+		4992D2AE14EF6039006AEB4F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4992D2AD14EF6039006AEB4F /* AudioToolbox.framework */; };
+		49D26BBF14EF34A800EEDDA5 /* ExtraCallbacks.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D26BBE14EF34A800EEDDA5 /* ExtraCallbacks.h */; };
+		49D4823514EED2B400E9CFA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D4823414EED2B400E9CFA5 /* Foundation.framework */; };
+		49D4825714EED94200E9CFA5 /* stdafx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49D4825514EED94200E9CFA5 /* stdafx.cpp */; };
+		49D4825814EED94200E9CFA5 /* stdafx.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D4825614EED94200E9CFA5 /* stdafx.h */; };
+		49D4825D14EED96600E9CFA5 /* AkCallbackSerializer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49D4825914EED96600E9CFA5 /* AkCallbackSerializer.cpp */; };
+		49D4825E14EED96600E9CFA5 /* AkCallbackSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D4825A14EED96600E9CFA5 /* AkCallbackSerializer.h */; };
+		49D4825F14EED96600E9CFA5 /* AkSoundEngineExports.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D4825B14EED96600E9CFA5 /* AkSoundEngineExports.h */; };
+		49D4826314EED9C600E9CFA5 /* SoundEngine_wrap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 49D4826214EED9C600E9CFA5 /* SoundEngine_wrap.cxx */; };
+		49D4826814EEE02400E9CFA5 /* AkSoundEngineStubs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49D4826714EEE02400E9CFA5 /* AkSoundEngineStubs.cpp */; };
+		49D4826C14EEE0E200E9CFA5 /* AkFileLocationBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49D4826A14EEE0E200E9CFA5 /* AkFileLocationBase.cpp */; };
+		49D4826D14EEE0E200E9CFA5 /* AkFileLocationBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D4826B14EEE0E200E9CFA5 /* AkFileLocationBase.h */; };
+		49D4827114EEE0FA00E9CFA5 /* AkDefaultIOHookBlocking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49D4826E14EEE0FA00E9CFA5 /* AkDefaultIOHookBlocking.cpp */; };
+		49D4827214EEE0FA00E9CFA5 /* AkDefaultIOHookBlocking.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D4826F14EEE0FA00E9CFA5 /* AkDefaultIOHookBlocking.h */; };
+		49D4827314EEE0FA00E9CFA5 /* AkFileHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D4827014EEE0FA00E9CFA5 /* AkFileHelpers.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4992D2A814EF6028006AEB4F /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		4992D2AB14EF6030006AEB4F /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		4992D2AD14EF6039006AEB4F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		49D26BBE14EF34A800EEDDA5 /* ExtraCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExtraCallbacks.h; path = ../Common/ExtraCallbacks.h; sourceTree = SOURCE_ROOT; };
+		49D26BC014EF34D400EEDDA5 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = readme.txt; path = ../Common/readme.txt; sourceTree = SOURCE_ROOT; };
+		49D4823114EED2B400E9CFA5 /* libAkSoundEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAkSoundEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D4823414EED2B400E9CFA5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49D4823814EED2B400E9CFA5 /* AkSoundEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AkSoundEngine-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		49D4825514EED94200E9CFA5 /* stdafx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stdafx.cpp; sourceTree = SOURCE_ROOT; };
+		49D4825614EED94200E9CFA5 /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = SOURCE_ROOT; };
+		49D4825914EED96600E9CFA5 /* AkCallbackSerializer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AkCallbackSerializer.cpp; path = ../Common/AkCallbackSerializer.cpp; sourceTree = SOURCE_ROOT; };
+		49D4825A14EED96600E9CFA5 /* AkCallbackSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AkCallbackSerializer.h; path = ../Common/AkCallbackSerializer.h; sourceTree = SOURCE_ROOT; };
+		49D4825B14EED96600E9CFA5 /* AkSoundEngineExports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AkSoundEngineExports.h; path = ../Common/AkSoundEngineExports.h; sourceTree = SOURCE_ROOT; };
+		49D4826214EED9C600E9CFA5 /* SoundEngine_wrap.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundEngine_wrap.cxx; sourceTree = SOURCE_ROOT; };
+		49D4826714EEE02400E9CFA5 /* AkSoundEngineStubs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AkSoundEngineStubs.cpp; path = ../Common/AkSoundEngineStubs.cpp; sourceTree = SOURCE_ROOT; };
+		49D4826A14EEE0E200E9CFA5 /* AkFileLocationBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AkFileLocationBase.cpp; path = ../Common/AkFileLocationBase.cpp; sourceTree = SOURCE_ROOT; };
+		49D4826B14EEE0E200E9CFA5 /* AkFileLocationBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AkFileLocationBase.h; path = ../Common/AkFileLocationBase.h; sourceTree = SOURCE_ROOT; };
+		49D4826E14EEE0FA00E9CFA5 /* AkDefaultIOHookBlocking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AkDefaultIOHookBlocking.cpp; sourceTree = SOURCE_ROOT; };
+		49D4826F14EEE0FA00E9CFA5 /* AkDefaultIOHookBlocking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AkDefaultIOHookBlocking.h; sourceTree = SOURCE_ROOT; };
+		49D4827014EEE0FA00E9CFA5 /* AkFileHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AkFileHelpers.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49D4822E14EED2B400E9CFA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4992D2AE14EF6039006AEB4F /* AudioToolbox.framework in Frameworks */,
+				4992D2AC14EF6030006AEB4F /* AudioUnit.framework in Frameworks */,
+				4992D2A914EF6028006AEB4F /* CoreAudio.framework in Frameworks */,
+				49D4823514EED2B400E9CFA5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49D4822614EED2B400E9CFA5 = {
+			isa = PBXGroup;
+			children = (
+				49D4823614EED2B400E9CFA5 /* AkSoundEngine */,
+				49D4823314EED2B400E9CFA5 /* Frameworks */,
+				49D4823214EED2B400E9CFA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49D4823214EED2B400E9CFA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49D4823114EED2B400E9CFA5 /* libAkSoundEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49D4823314EED2B400E9CFA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4992D2AD14EF6039006AEB4F /* AudioToolbox.framework */,
+				4992D2AB14EF6030006AEB4F /* AudioUnit.framework */,
+				4992D2A814EF6028006AEB4F /* CoreAudio.framework */,
+				49D4823414EED2B400E9CFA5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49D4823614EED2B400E9CFA5 /* AkSoundEngine */ = {
+			isa = PBXGroup;
+			children = (
+				49D4824A14EED8B700E9CFA5 /* DefaultLowLevelIO */,
+				49D4826114EED98800E9CFA5 /* GeneratedApiWrapper */,
+				49D4824C14EED8D600E9CFA5 /* Source Files */,
+				49D4823714EED2B400E9CFA5 /* Supporting Files */,
+			);
+			path = AkSoundEngine;
+			sourceTree = "<group>";
+		};
+		49D4823714EED2B400E9CFA5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49D4823814EED2B400E9CFA5 /* AkSoundEngine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49D4824A14EED8B700E9CFA5 /* DefaultLowLevelIO */ = {
+			isa = PBXGroup;
+			children = (
+				49D4826E14EEE0FA00E9CFA5 /* AkDefaultIOHookBlocking.cpp */,
+				49D4826F14EEE0FA00E9CFA5 /* AkDefaultIOHookBlocking.h */,
+				49D4827014EEE0FA00E9CFA5 /* AkFileHelpers.h */,
+				49D4826A14EEE0E200E9CFA5 /* AkFileLocationBase.cpp */,
+				49D4826B14EEE0E200E9CFA5 /* AkFileLocationBase.h */,
+			);
+			name = DefaultLowLevelIO;
+			sourceTree = "<group>";
+		};
+		49D4824C14EED8D600E9CFA5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				49D4825914EED96600E9CFA5 /* AkCallbackSerializer.cpp */,
+				49D4825A14EED96600E9CFA5 /* AkCallbackSerializer.h */,
+				49D4825B14EED96600E9CFA5 /* AkSoundEngineExports.h */,
+				49D4826714EEE02400E9CFA5 /* AkSoundEngineStubs.cpp */,
+				49D26BBE14EF34A800EEDDA5 /* ExtraCallbacks.h */,
+				49D26BC014EF34D400EEDDA5 /* readme.txt */,
+				49D4825514EED94200E9CFA5 /* stdafx.cpp */,
+				49D4825614EED94200E9CFA5 /* stdafx.h */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		49D4826114EED98800E9CFA5 /* GeneratedApiWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				49D4826214EED9C600E9CFA5 /* SoundEngine_wrap.cxx */,
+			);
+			name = GeneratedApiWrapper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		49D4822F14EED2B400E9CFA5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D4825814EED94200E9CFA5 /* stdafx.h in Headers */,
+				49D4825E14EED96600E9CFA5 /* AkCallbackSerializer.h in Headers */,
+				49D4825F14EED96600E9CFA5 /* AkSoundEngineExports.h in Headers */,
+				49D4826D14EEE0E200E9CFA5 /* AkFileLocationBase.h in Headers */,
+				49D4827214EEE0FA00E9CFA5 /* AkDefaultIOHookBlocking.h in Headers */,
+				49D4827314EEE0FA00E9CFA5 /* AkFileHelpers.h in Headers */,
+				49D26BBF14EF34A800EEDDA5 /* ExtraCallbacks.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		49D4823014EED2B400E9CFA5 /* AkSoundEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D4823E14EED2B400E9CFA5 /* Build configuration list for PBXNativeTarget "AkSoundEngine" */;
+			buildPhases = (
+				49D4824914EED43200E9CFA5 /* ShellScript */,
+				49D4822D14EED2B400E9CFA5 /* Sources */,
+				49D4822E14EED2B400E9CFA5 /* Frameworks */,
+				49D4822F14EED2B400E9CFA5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AkSoundEngine;
+			productName = AkSoundEngine;
+			productReference = 49D4823114EED2B400E9CFA5 /* libAkSoundEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49D4822814EED2B400E9CFA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 49D4822B14EED2B400E9CFA5 /* Build configuration list for PBXProject "AkSoundEngineiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 49D4822614EED2B400E9CFA5;
+			productRefGroup = 49D4823214EED2B400E9CFA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49D4823014EED2B400E9CFA5 /* AkSoundEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49D4824914EED43200E9CFA5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Generate Wwise SDK API bindings for Unity: python ${PROJECT_DIR}/../Common/GenerateApiBinding.py iOS (Check detailed logs under ${PROJECT_DIR}/../../Logs) ...\"\n\nexport PATH=$PATH:/usr/local/bin\npython \"${PROJECT_DIR}/../Common/GenerateApiBinding.py\" iOS\nif [ \"$?\" -ne \"0\" ]; then\n    BuildPhase=Pre-Build\n    echo ${BuildPhase}: Failed. Quit.\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49D4822D14EED2B400E9CFA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D4825714EED94200E9CFA5 /* stdafx.cpp in Sources */,
+				49D4825D14EED96600E9CFA5 /* AkCallbackSerializer.cpp in Sources */,
+				49D4826314EED9C600E9CFA5 /* SoundEngine_wrap.cxx in Sources */,
+				49D4826814EEE02400E9CFA5 /* AkSoundEngineStubs.cpp in Sources */,
+				49D4826C14EEE0E200E9CFA5 /* AkFileLocationBase.cpp in Sources */,
+				49D4827114EEE0FA00E9CFA5 /* AkDefaultIOHookBlocking.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		49D03E9D1512942600A5DC2F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${WWISESDK}/include";
+				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "${WWISESDK}/lib";
+				MACH_O_TYPE = staticlib;
+				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Profile;
+		};
+		49D03E9E1512942600A5DC2F /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/../../Deployment/Plugins/iOS/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_DIR)/../../Build/iOS/$(CONFIGURATION)/obj";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = /tmp/AkSoundEngine.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AkSoundEngine-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../Common,
+					"\"${WWISESDK}/include\"",
+				);
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				LIBRARY_SEARCH_PATHS = "\"${WWISESDK}/iOS/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"/lib";
+				OBJROOT = "$(PROJECT_DIR)/../../Build/iOS/$(CONFIGURATION)/obj";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-mno-thumb";
+				OTHER_LDFLAGS = (
+					"-lAkPitchShifterFX",
+					"-lAkStereoDelayFX",
+					"-lAkTimeStretchFX",
+					"-lAkHarmonizerFX",
+					"-lAkMeterFX",
+					"-lAkConvolutionReverbFX",
+					"-lAkAACDecoder",
+					"-lAkAudioInputSource",
+					"-lAkSilenceSource",
+					"-lAkPeakLimiterFX",
+					"-lAkRoomVerbFX",
+					"-lAkParametricEQFX",
+					"-lAkGainFX",
+					"-lAkDelayFX",
+					"-lAkMatrixReverbFX",
+					"-lAkExpanderFX",
+					"-lAkCompressorFX",
+					"-lAkSineSource",
+					"-lAkGuitarDistortionFX",
+					"-lAkTremoloFX",
+					"-lAkFlangerFX",
+					"-lAkToneSource",
+					"-lAkSoundSeedImpactFX",
+					"-lAkMemoryMgr",
+					"-lAkMusicEngine",
+					"-lMcDSPLimiterFX",
+					"-lMcDSPFutzBoxFX",
+					"-lAkSoundSeedWoosh",
+					"-lAkSoundSeedWind",
+					"-lAkSoundEngine",
+					"-lAkStreamMgr",
+					"-lAkVorbisDecoder",
+					"-lCommunicationCentral",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(PROJECT_DIR)/../../Build/iOS/$(CONFIGURATION)/pch";
+				SKIP_INSTALL = YES;
+				STRINGS_FILE_OUTPUT_ENCODING = binary;
+				SYMROOT = "$(PROJECT_DIR)/../../Deployment/Plugins/iOS/$(CONFIGURATION)";
+				VALID_ARCHS = "armv7s armv7";
+			};
+			name = Profile;
+		};
+		49D4823C14EED2B400E9CFA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${WWISESDK}/include";
+				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "${WWISESDK}/lib";
+				MACH_O_TYPE = staticlib;
+				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49D4823D14EED2B400E9CFA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = AK_OPTIMIZED;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "${WWISESDK}/include";
+				INFOPLIST_OUTPUT_FORMAT = "same-as-input";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "${WWISESDK}/lib";
+				MACH_O_TYPE = staticlib;
+				PLIST_FILE_OUTPUT_FORMAT = "same-as-input";
+				SDKROOT = iphoneos;
+				STRINGS_FILE_OUTPUT_ENCODING = "UTF-16";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49D4823F14EED2B400E9CFA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/../../Deployment/Plugins/iOS/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_DIR)/../../Build/iOS/$(CONFIGURATION)/obj";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = /tmp/AkSoundEngine.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AkSoundEngine-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../Common,
+					"\"${WWISESDK}/include\"",
+				);
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				LIBRARY_SEARCH_PATHS = "\"${WWISESDK}/iOS/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"/lib";
+				OBJROOT = "$(PROJECT_DIR)/../../Build/iOS/$(CONFIGURATION)/obj";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-mno-thumb";
+				OTHER_LDFLAGS = (
+					"-lAkPitchShifterFX",
+					"-lAkStereoDelayFX",
+					"-lAkTimeStretchFX",
+					"-lAkHarmonizerFX",
+					"-lAkMeterFX",
+					"-lAkConvolutionReverbFX",
+					"-lAkAACDecoder",
+					"-lAkAudioInputSource",
+					"-lAkSilenceSource",
+					"-lAkPeakLimiterFX",
+					"-lAkRoomVerbFX",
+					"-lAkParametricEQFX",
+					"-lAkGainFX",
+					"-lAkDelayFX",
+					"-lAkMatrixReverbFX",
+					"-lAkExpanderFX",
+					"-lAkCompressorFX",
+					"-lAkSineSource",
+					"-lAkGuitarDistortionFX",
+					"-lAkTremoloFX",
+					"-lAkFlangerFX",
+					"-lAkToneSource",
+					"-lAkSoundSeedImpactFX",
+					"-lAkMemoryMgr",
+					"-lAkMusicEngine",
+					"-lMcDSPLimiterFX",
+					"-lMcDSPFutzBoxFX",
+					"-lAkSoundSeedWoosh",
+					"-lAkSoundSeedWind",
+					"-lAkSoundEngine",
+					"-lAkStreamMgr",
+					"-lAkVorbisDecoder",
+					"-lCommunicationCentral",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(PROJECT_DIR)/../../Build/iOS/$(CONFIGURATION)/pch";
+				SKIP_INSTALL = YES;
+				STRINGS_FILE_OUTPUT_ENCODING = binary;
+				SYMROOT = "$(PROJECT_DIR)/../../Deployment/Plugins/iOS/$(CONFIGURATION)";
+				VALID_ARCHS = "armv7s armv7";
+			};
+			name = Debug;
+		};
+		49D4824014EED2B400E9CFA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/../../Deployment/Plugins/iOS/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_DIR)/../../Build/iOS/$(CONFIGURATION)/obj";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DSTROOT = /tmp/AkSoundEngine.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AkSoundEngine-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../Common,
+					"\"${WWISESDK}/include\"",
+				);
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				LIBRARY_SEARCH_PATHS = "\"${WWISESDK}/iOS/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"/lib";
+				OBJROOT = "$(PROJECT_DIR)/../../Build/iOS/$(CONFIGURATION)/obj";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-mno-thumb";
+				OTHER_LDFLAGS = (
+					"-lAkPitchShifterFX",
+					"-lAkStereoDelayFX",
+					"-lAkTimeStretchFX",
+					"-lAkHarmonizerFX",
+					"-lAkMeterFX",
+					"-lAkConvolutionReverbFX",
+					"-lAkAACDecoder",
+					"-lAkAudioInputSource",
+					"-lAkSilenceSource",
+					"-lAkPeakLimiterFX",
+					"-lAkRoomVerbFX",
+					"-lAkParametricEQFX",
+					"-lAkGainFX",
+					"-lAkDelayFX",
+					"-lAkMatrixReverbFX",
+					"-lAkExpanderFX",
+					"-lAkCompressorFX",
+					"-lAkSineSource",
+					"-lAkGuitarDistortionFX",
+					"-lAkTremoloFX",
+					"-lAkFlangerFX",
+					"-lAkToneSource",
+					"-lAkSoundSeedImpactFX",
+					"-lAkMemoryMgr",
+					"-lAkMusicEngine",
+					"-lMcDSPLimiterFX",
+					"-lMcDSPFutzBoxFX",
+					"-lAkSoundSeedWoosh",
+					"-lAkSoundSeedWind",
+					"-lAkSoundEngine",
+					"-lAkStreamMgr",
+					"-lAkVorbisDecoder",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SHARED_PRECOMPS_DIR = "$(PROJECT_DIR)/../../Build/iOS/$(CONFIGURATION)/pch";
+				SKIP_INSTALL = YES;
+				STRINGS_FILE_OUTPUT_ENCODING = binary;
+				SYMROOT = "$(PROJECT_DIR)/../../Deployment/Plugins/iOS/$(CONFIGURATION)";
+				VALID_ARCHS = "armv7s armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49D4822B14EED2B400E9CFA5 /* Build configuration list for PBXProject "AkSoundEngineiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D4823C14EED2B400E9CFA5 /* Debug */,
+				49D4823D14EED2B400E9CFA5 /* Release */,
+				49D03E9D1512942600A5DC2F /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D4823E14EED2B400E9CFA5 /* Build configuration list for PBXNativeTarget "AkSoundEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D4823F14EED2B400E9CFA5 /* Debug */,
+				49D4824014EED2B400E9CFA5 /* Release */,
+				49D03E9E1512942600A5DC2F /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49D4822814EED2B400E9CFA5 /* Project object */;
+}

@@ -1,0 +1,27 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4067002958	EVENT_Ambiance_Emotions_Set			\Ambiances\EVENT_Ambiance_Emotions_Set	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	522396015	ST_Ambiance_Type_Set			\Default Work Unit\WU_Ambiances\ST_Ambiance_Type_Set	
+	810510556	ST_Emotions_Set			\Default Work Unit\WU_Emotions\ST_Emotions_Set	
+
+State	ID	Name	State Group			Notes
+	748895195	None	ST_Ambiance_Type_Set			
+	3844304025	ST_Ambiance_Forest	ST_Ambiance_Type_Set			
+	4041051413	ST_Ambiance_Cave	ST_Ambiance_Type_Set			
+	748895195	None	ST_Emotions_Set			
+	2243756264	ST_Emotions_Anxiety	ST_Emotions_Set			
+	3251528809	ST_Emotions_Sadness	ST_Emotions_Set			
+	3458300193	ST_Emotions_Anger	ST_Emotions_Set			
+	3660971507	ST_Emotions_Euphoria	ST_Emotions_Set			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	92537294	AMB_Forest_Anxiety_Rnd_01	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Windows\sfx\ambiances\amb_forest_anxiety_rnd_01_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb\Amb_Set\Amb_Forest_Set\AMB_Forest_Anxiety_rnd\AMB_Forest_Anxiety_Rnd_01		592960
+	268098938	AMB_Forest_Sadness_drone_lp	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Windows\sfx\ambiances\amb_forest_sadness_drone_lp_33a1983b.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb\Amb_Set\Amb_Forest_Set\AMB_Forest_Sadness_drone_lp		1884224
+	500715294	AMB_Forest_Anxiety_Rnd_04	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Windows\sfx\ambiances\amb_forest_anxiety_rnd_04_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb\Amb_Set\Amb_Forest_Set\AMB_Forest_Anxiety_rnd\AMB_Forest_Anxiety_Rnd_04		344128
+	549294147	AMB_Forest_Anxiety_Rnd_03	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Windows\sfx\ambiances\amb_forest_anxiety_rnd_03_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb\Amb_Set\Amb_Forest_Set\AMB_Forest_Anxiety_rnd\AMB_Forest_Anxiety_Rnd_03		778304
+	589131069	AMB_Forest_Anxiety_Rnd_02	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Windows\sfx\ambiances\amb_forest_anxiety_rnd_02_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb\Amb_Set\Amb_Forest_Set\AMB_Forest_Anxiety_rnd\AMB_Forest_Anxiety_Rnd_02		193600
+	664495484	AMB_Forest_Sadness_Lp	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Windows\sfx\ambiances\amb_forest_sadness_lp_5d566f3b.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb\Amb_Set\Amb_Forest_Set\AMB_Forest_Sadness_Lp		3327552
+	1039232095	AMB_Forest_Anxiety_Rnd_05	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Windows\sfx\ambiances\amb_forest_anxiety_rnd_05_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb\Amb_Set\Amb_Forest_Set\AMB_Forest_Anxiety_rnd\AMB_Forest_Anxiety_Rnd_05		254016
+	1045874353	AMB_Forest_Anxiety_Lp	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Windows\sfx\ambiances\amb_forest_anxiety_lp_a145608e.wem		\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb\Amb_Set\Amb_Forest_Set\AMB_Forest_Anxiety_Lp		3375168
+

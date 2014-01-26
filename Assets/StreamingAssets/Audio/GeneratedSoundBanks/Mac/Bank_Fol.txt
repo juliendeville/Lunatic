@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2286896792	EVENT_Fol_Search			\Foley\EVENT_Fol_Search	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	305663069	Fol_Search_Leaves_01	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Mac\sfx\foleys\fol_search_leaves_01_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fol\Fol_Search_Leaves\Fol_Search_Leaves_01		105606
+	405083101	Fol_Search_Leaves_03	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Mac\sfx\foleys\fol_search_leaves_03_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fol\Fol_Search_Leaves\Fol_Search_Leaves_03		134208
+	698080419	Fol_Search_Leaves_02	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\Mac\sfx\foleys\fol_search_leaves_02_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fol\Fol_Search_Leaves\Fol_Search_Leaves_02		101766
+
