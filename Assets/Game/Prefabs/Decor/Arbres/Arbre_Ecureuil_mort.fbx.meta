@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1b2fea3a4d0f4ecfa0ef6ce828e6417
+guid: 1d64e9d7c9f604c68bc0d437e31350e5
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
@@ -9,57 +9,37 @@ ModelImporter:
     100006: Cylinder_002
     100008: Cylinder_003
     100010: Cylinder_004
-    100012: Cylinder_005
-    100014: Icosphere
-    100016: Icosphere_001
-    100018: Icosphere_002
-    100020: Icosphere_003
-    100022: Icosphere_004
+    100012: Icosphere_001
+    100014: Sphere
     400000: //RootNode
     400002: Cylinder
     400004: Cylinder_001
     400006: Cylinder_002
     400008: Cylinder_003
     400010: Cylinder_004
-    400012: Cylinder_005
-    400014: Icosphere
-    400016: Icosphere_001
-    400018: Icosphere_002
-    400020: Icosphere_003
-    400022: Icosphere_004
+    400012: Icosphere_001
+    400014: Sphere
     2300000: Cylinder
     2300002: Cylinder_001
     2300004: Cylinder_002
     2300006: Cylinder_003
     2300008: Cylinder_004
-    2300010: Cylinder_005
-    2300012: Icosphere
-    2300014: Icosphere_001
-    2300016: Icosphere_002
-    2300018: Icosphere_003
-    2300020: Icosphere_004
+    2300010: Icosphere_001
+    2300012: Sphere
     3300000: Cylinder
     3300002: Cylinder_001
     3300004: Cylinder_002
     3300006: Cylinder_003
     3300008: Cylinder_004
-    3300010: Cylinder_005
-    3300012: Icosphere
-    3300014: Icosphere_001
-    3300016: Icosphere_002
-    3300018: Icosphere_003
-    3300020: Icosphere_004
-    4300000: Cylinder_004
-    4300002: Icosphere_002
-    4300004: Icosphere_001
-    4300006: Cylinder_001
-    4300008: Icosphere
-    4300010: Cylinder
-    4300012: Cylinder_002
-    4300014: Cylinder_003
-    4300016: Icosphere_003
-    4300018: Cylinder_005
-    4300020: Icosphere_004
+    3300010: Icosphere_001
+    3300012: Sphere
+    4300000: Sphere
+    4300002: Icosphere_001
+    4300004: Cylinder_001
+    4300006: Cylinder
+    4300008: Cylinder_002
+    4300010: Cylinder_003
+    4300012: Cylinder_004
     7400000: Default Take
     9500000: //RootNode
   materials:
