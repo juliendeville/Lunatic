@@ -47,7 +47,15 @@ ModelImporter:
     400040: Ventre_0
     4300000: Buste
     4300002: Ventre
-    7400000: SqueletteAction_002
+    7400000: Marcher
+    7400002: Pickup
+    7400004: Attack
+    7400006: Climb_Start
+    7400008: Climb_Loop
+    7400010: Climb_End
+    7400012: Fall
+    7400014: Attacked
+    7400016: Idle
     9500000: //RootNode
     13700000: Buste
     13700002: Ventre
@@ -65,11 +73,623 @@ ModelImporter:
     animationScaleError: .5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Marcher
+      takeName: SqueletteAction_002
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Buste
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Squelette
+        weight: 1
+      - path: Squelette/Ventre_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite/Main_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche/Main_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Tete
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite/Pied_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche/Pied_Gauche
+        weight: 1
+      - path: Ventre
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Pickup
+      takeName: SqueletteAction_002
+      firstFrame: 49
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Buste
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Squelette
+        weight: 1
+      - path: Squelette/Ventre_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite/Main_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche/Main_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Tete
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite/Pied_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche/Pied_Gauche
+        weight: 1
+      - path: Ventre
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attack
+      takeName: SqueletteAction_002
+      firstFrame: 95
+      lastFrame: 132
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Buste
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Squelette
+        weight: 1
+      - path: Squelette/Ventre_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite/Main_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche/Main_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Tete
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite/Pied_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche/Pied_Gauche
+        weight: 1
+      - path: Ventre
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Climb_Start
+      takeName: SqueletteAction_002
+      firstFrame: 133
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Buste
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Squelette
+        weight: 1
+      - path: Squelette/Ventre_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite/Main_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche/Main_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Tete
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite/Pied_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche/Pied_Gauche
+        weight: 1
+      - path: Ventre
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Climb_Loop
+      takeName: SqueletteAction_002
+      firstFrame: 151
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Buste
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Squelette
+        weight: 1
+      - path: Squelette/Ventre_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite/Main_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche/Main_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Tete
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite/Pied_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche/Pied_Gauche
+        weight: 1
+      - path: Ventre
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Climb_End
+      takeName: SqueletteAction_002
+      firstFrame: 171
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Buste
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Squelette
+        weight: 1
+      - path: Squelette/Ventre_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite/Main_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche/Main_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Tete
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite/Pied_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche/Pied_Gauche
+        weight: 1
+      - path: Ventre
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Fall
+      takeName: SqueletteAction_002
+      firstFrame: 201
+      lastFrame: 230
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Buste
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Squelette
+        weight: 1
+      - path: Squelette/Ventre_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite/Main_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche/Main_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Tete
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite/Pied_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche/Pied_Gauche
+        weight: 1
+      - path: Ventre
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Attacked
+      takeName: SqueletteAction_002
+      firstFrame: 231
+      lastFrame: 294
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Buste
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Squelette
+        weight: 1
+      - path: Squelette/Ventre_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite/Main_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche/Main_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Tete
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite/Pied_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche/Pied_Gauche
+        weight: 1
+      - path: Ventre
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: SqueletteAction_002
+      firstFrame: 94
+      lastFrame: 94.0999985
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Buste
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Squelette
+        weight: 1
+      - path: Squelette/Ventre_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Droite/Avant_Bras_Droite/Main_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Bras_Gauche/Avant_Bras_gauche/Main_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Buste_0/Tete
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Droite/Mollet_Droite/Pied_Droite
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche
+        weight: 1
+      - path: Squelette/Ventre_0/Cuisse_Gauche/Mollet_Gauche/Pied_Gauche
+        weight: 1
+      - path: Ventre
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

@@ -29,9 +29,13 @@
 			<IncludedDialogueEvents />
 			<ReferencedStreamedFiles />
 			<IncludedFullFiles>
-				<File Id="1045874353" Language="SFX">
-					<ShortName>Ambiances\AMB_Forest_Anxiety_Lp.wav</ShortName>
-					<Path>sfx\ambiances\amb_forest_anxiety_lp_a145608e.wem</Path>
+				<File Id="686468982" Language="SFX">
+					<ShortName>Ambiances\AMB_Forest_Anger_Fire_Lp_02.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_anger_fire_lp_02_63645294.wem</Path>
+				</File>
+				<File Id="489368304" Language="SFX">
+					<ShortName>Ambiances\AMB_Forest_Anxiety_Lp_02.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_anxiety_lp_02_81d0f5a7.wem</Path>
 				</File>
 				<File Id="92537294" Language="SFX">
 					<ShortName>Ambiances\AMB_Forest_Anxiety_Rnd_01.wav</ShortName>
@@ -53,6 +57,10 @@
 					<ShortName>Ambiances\AMB_Forest_Anxiety_Rnd_05.wav</ShortName>
 					<Path>sfx\ambiances\amb_forest_anxiety_rnd_05_ddc98ef4.wem</Path>
 				</File>
+				<File Id="103738737" Language="SFX">
+					<ShortName>Ambiances\AMB_Forest_Euphoria_Lp.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_euphoria_lp_bba73bdd.wem</Path>
+				</File>
 				<File Id="268098938" Language="SFX">
 					<ShortName>Ambiances\AMB_Forest_Sadness_drone_lp.wav</ShortName>
 					<Path>sfx\ambiances\amb_forest_sadness_drone_lp_33a1983b.wem</Path>
@@ -69,12 +77,133 @@
 			<ShortName>Bank_Fol</ShortName>
 			<Path>Bank_Fol.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1257250495" Name="EVENT_Fol_Footstep_Play" />
 				<Event Id="4016136940" Name="EVENT_Fol_Land_Play" />
 				<Event Id="3689074753" Name="EVENT_Fol_Search_Play" />
 			</IncludedEvents>
 			<IncludedDialogueEvents />
 			<ReferencedStreamedFiles />
 			<IncludedFullFiles>
+				<File Id="108464167" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_L_01.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_l_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="741512689" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_L_02.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_l_02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="605649540" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_L_03.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_l_03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="168627794" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_L_04.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_l_04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="824404290" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_L_05.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_l_05_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1064536082" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_L_06.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_l_06_ddc98ef4.wem</Path>
+				</File>
+				<File Id="517504197" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_R_01.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_r_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="682291777" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_R_02.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_r_02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="419794517" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_R_03.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_r_03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="766335577" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_R_04.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_r_04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="492003336" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_R_05.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_r_05_ddc98ef4.wem</Path>
+				</File>
+				<File Id="980908195" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Cave_R_06.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_cave_r_06_ddc98ef4.wem</Path>
+				</File>
+				<File Id="956860288" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_L_01.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_l_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="451906477" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_L_02.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_l_02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="387002869" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_L_03.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_l_03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="974979455" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_L_04.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_l_04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="2416823" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_L_05.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_l_05_ddc98ef4.wem</Path>
+				</File>
+				<File Id="183355375" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_L_06.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_l_06_ddc98ef4.wem</Path>
+				</File>
+				<File Id="550028510" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_R_01.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_r_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="884104121" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_R_02.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_r_02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="54820689" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_R_03.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_r_03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="54373155" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_R_04.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_r_04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="385747357" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_R_05.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_r_05_ddc98ef4.wem</Path>
+				</File>
+				<File Id="312321691" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Jungle_R_06.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_jungle_r_06_ddc98ef4.wem</Path>
+				</File>
+				<File Id="122548373" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Wood_01.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_wood_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="491831429" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Wood_02.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_wood_02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="26190746" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Wood_03.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_wood_03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="414137858" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Wood_04.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_wood_04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="740221507" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Wood_05.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_wood_05_ddc98ef4.wem</Path>
+				</File>
+				<File Id="669370112" Language="SFX">
+					<ShortName>Foleys\Fol_Fs_Walk_Wood_06.wav</ShortName>
+					<Path>sfx\foleys\fol_fs_walk_wood_06_ddc98ef4.wem</Path>
+				</File>
 				<File Id="566766971" Language="SFX">
 					<ShortName>Foleys\Fol_Land_Grass_01.wav</ShortName>
 					<Path>sfx\foleys\fol_land_grass_01_ddc98ef4.wem</Path>
