@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="iOS" SchemaVersion="9">
+	<RootPaths>
+		<ProjectRoot>\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\</ProjectRoot>
+		<SourceFilesRoot>\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\iOS\</SourceFilesRoot>
+		<SoundBanksRoot>\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\GeneratedSoundBanks\iOS\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\GeneratedSoundBanks\iOS</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents />
+	<StreamedFiles />
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedEvents />
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles />
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="3835427210" Language="SFX">
+			<ShortName>Bank_Amb</ShortName>
+			<Path>Bank_Amb.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4067002958" Name="EVENT_Ambiance_Emotions_Set" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="1045874353" Language="SFX">
+					<ShortName>Ambiances\AMB_Forest_Anxiety_Lp.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_anxiety_lp_a145608e.wem</Path>
+				</File>
+				<File Id="92537294" Language="SFX">
+					<ShortName>Ambiances\AMB_Forest_Anxiety_Rnd_01.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_anxiety_rnd_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="589131069" Language="SFX">
+					<ShortName>Ambiances\AMB_Forest_Anxiety_Rnd_02.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_anxiety_rnd_02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="549294147" Language="SFX">
+					<ShortName>Ambiances\AMB_Forest_Anxiety_Rnd_03.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_anxiety_rnd_03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="500715294" Language="SFX">
+					<ShortName>Ambiances\AMB_Forest_Anxiety_Rnd_04.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_anxiety_rnd_04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="1039232095" Language="SFX">
+					<ShortName>Ambiances\AMB_Forest_Anxiety_Rnd_05.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_anxiety_rnd_05_ddc98ef4.wem</Path>
+				</File>
+				<File Id="268098938" Language="SFX">
+					<ShortName>Ambiances\AMB_Forest_Sadness_drone_lp.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_sadness_drone_lp_33a1983b.wem</Path>
+				</File>
+				<File Id="664495484" Language="SFX">
+					<ShortName>Ambiances\Amb_Forest_Sadness_Lp.wav</ShortName>
+					<Path>sfx\ambiances\amb_forest_sadness_lp_5d566f3b.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+		<SoundBank Id="3867849601" Language="SFX">
+			<ShortName>Bank_Fol</ShortName>
+			<Path>Bank_Fol.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2286896792" Name="EVENT_Fol_Search" />
+			</IncludedEvents>
+			<IncludedDialogueEvents />
+			<ReferencedStreamedFiles />
+			<IncludedFullFiles>
+				<File Id="305663069" Language="SFX">
+					<ShortName>Foleys\Fol_Search_Leaves_01.wav</ShortName>
+					<Path>sfx\foleys\fol_search_leaves_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="698080419" Language="SFX">
+					<ShortName>Foleys\Fol_Search_Leaves_02.wav</ShortName>
+					<Path>sfx\foleys\fol_search_leaves_02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="405083101" Language="SFX">
+					<ShortName>Foleys\Fol_Search_Leaves_03.wav</ShortName>
+					<Path>sfx\foleys\fol_search_leaves_03_ddc98ef4.wem</Path>
+				</File>
+			</IncludedFullFiles>
+			<IncludedPrefetchFiles />
+			<ExternalSources />
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
