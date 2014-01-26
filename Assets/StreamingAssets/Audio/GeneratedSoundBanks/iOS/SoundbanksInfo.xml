@@ -69,11 +69,28 @@
 			<ShortName>Bank_Fol</ShortName>
 			<Path>Bank_Fol.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2286896792" Name="EVENT_Fol_Search" />
+				<Event Id="4016136940" Name="EVENT_Fol_Land_Play" />
+				<Event Id="3689074753" Name="EVENT_Fol_Search_Play" />
 			</IncludedEvents>
 			<IncludedDialogueEvents />
 			<ReferencedStreamedFiles />
 			<IncludedFullFiles>
+				<File Id="566766971" Language="SFX">
+					<ShortName>Foleys\Fol_Land_Grass_01.wav</ShortName>
+					<Path>sfx\foleys\fol_land_grass_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="317526557" Language="SFX">
+					<ShortName>Foleys\Fol_Land_Grass_02.wav</ShortName>
+					<Path>sfx\foleys\fol_land_grass_02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="882371623" Language="SFX">
+					<ShortName>Foleys\Fol_Land_Grass_03.wav</ShortName>
+					<Path>sfx\foleys\fol_land_grass_03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="144432650" Language="SFX">
+					<ShortName>Foleys\Fol_Land_Grass_04.wav</ShortName>
+					<Path>sfx\foleys\fol_land_grass_04_ddc98ef4.wem</Path>
+				</File>
 				<File Id="305663069" Language="SFX">
 					<ShortName>Foleys\Fol_Search_Leaves_01.wav</ShortName>
 					<Path>sfx\foleys\fol_search_leaves_01_ddc98ef4.wem</Path>

@@ -1,0 +1,5 @@
+Wwise Unity Integration Version Info:
+
+Stable Version (SVN): 691
+
+Based on Wwise SDK: 2013.2.4 Build 4836

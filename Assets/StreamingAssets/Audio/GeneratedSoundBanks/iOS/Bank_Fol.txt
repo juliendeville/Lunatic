@@ -1,8 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2286896792	EVENT_Fol_Search			\Foley\EVENT_Fol_Search	
+	3689074753	EVENT_Fol_Search_Play			\Foley\EVENT_Fol_Search_Play	
+	4016136940	EVENT_Fol_Land_Play			\Foley\EVENT_Fol_Land_Play	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2121926972	SW_Fol_Ground_Type			\WU_Switchs\SW_Fol_Ground_Type	
+
+Switch	ID	Name	Switch Group			Notes
+	297263356	SW_Fol_Ground_Type_Cave	SW_Fol_Ground_Type			
+	2191952675	SW_Fol_Ground_Type_Grass	SW_Fol_Ground_Type			
+	3318863596	SW_Fol_Ground_Type_Bridge	SW_Fol_Ground_Type			
+	3982581884	SW_Fol_Ground_Type_Wood	SW_Fol_Ground_Type			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	144432650	Fol_Land_Grass_04	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\iOS\sfx\foleys\fol_land_grass_04_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fol\Fol_Land_Set\Fol_Land_Grass\Fol_Land_Grass_04		70006
 	305663069	Fol_Search_Leaves_01	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\iOS\sfx\foleys\fol_search_leaves_01_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fol\Fol_Search_Leaves\Fol_Search_Leaves_01		105606
+	317526557	Fol_Land_Grass_02	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\iOS\sfx\foleys\fol_land_grass_02_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fol\Fol_Land_Set\Fol_Land_Grass\Fol_Land_Grass_02		69064
 	405083101	Fol_Search_Leaves_03	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\iOS\sfx\foleys\fol_search_leaves_03_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fol\Fol_Search_Leaves\Fol_Search_Leaves_03		134208
+	566766971	Fol_Land_Grass_01	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\iOS\sfx\foleys\fol_land_grass_01_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fol\Fol_Land_Set\Fol_Land_Grass\Fol_Land_Grass_01		71446
 	698080419	Fol_Search_Leaves_02	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\iOS\sfx\foleys\fol_search_leaves_02_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fol\Fol_Search_Leaves\Fol_Search_Leaves_02		101766
+	882371623	Fol_Land_Grass_03	\\psf\Home\Desktop\# MAO\zGAMEJAM\GGJ 2014\Lunatica - Intégration Wwise\Lunatica GGJ2014\.cache\iOS\sfx\foleys\fol_land_grass_03_ddc98ef4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fol\Fol_Land_Set\Fol_Land_Grass\Fol_Land_Grass_03		90520
 
