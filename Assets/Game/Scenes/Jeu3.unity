@@ -1318,7 +1318,7 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 1773356777}
   m_GameObject: {fileID: 794366101}
-  m_Mass: 1
+  m_Mass: 20
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
@@ -1643,7 +1643,7 @@ GameObject:
   - 4: {fileID: 1033179637}
   - 33: {fileID: 1033179636}
   - 23: {fileID: 1033179635}
-  - 111: {fileID: 1033179634}
+  - 95: {fileID: 1033179634}
   m_Layer: 0
   m_Name: Pont2
   m_TagString: Untagged
@@ -1651,23 +1651,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!111 &1033179634
-Animation:
+--- !u!95 &1033179634
+Animator:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100000, guid: 9ed9122c399660d418d4b059a6aeca5c,
+  m_PrefabParentObject: {fileID: 9500000, guid: 9ed9122c399660d418d4b059a6aeca5c,
     type: 3}
   m_PrefabInternal: {fileID: 279054577}
   m_GameObject: {fileID: 1033179633}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 9ed9122c399660d418d4b059a6aeca5c, type: 3}
-  m_Animations:
-  - {fileID: 7400000, guid: 9ed9122c399660d418d4b059a6aeca5c, type: 3}
-  - {fileID: 7400002, guid: 9ed9122c399660d418d4b059a6aeca5c, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_Avatar: {fileID: 9000000, guid: 9ed9122c399660d418d4b059a6aeca5c, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_HasTransformHierarchy: 1
 --- !u!23 &1033179635
 Renderer:
   m_ObjectHideFlags: 0
@@ -2361,7 +2359,7 @@ GameObject:
   - 4: {fileID: 1304338369}
   - 33: {fileID: 1304338368}
   - 23: {fileID: 1304338367}
-  - 111: {fileID: 1304338366}
+  - 95: {fileID: 1304338366}
   - 50: {fileID: 1304338371}
   - 61: {fileID: 1304338370}
   m_Layer: 0
@@ -2371,22 +2369,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!111 &1304338366
-Animation:
+--- !u!95 &1304338366
+Animator:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100000, guid: 5b30b650332bbbe4183af6fa919e2f2b,
+  m_PrefabParentObject: {fileID: 9500000, guid: 5b30b650332bbbe4183af6fa919e2f2b,
     type: 3}
   m_PrefabInternal: {fileID: 655029582}
   m_GameObject: {fileID: 1304338365}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 5b30b650332bbbe4183af6fa919e2f2b, type: 3}
-  m_Animations:
-  - {fileID: 7400000, guid: 5b30b650332bbbe4183af6fa919e2f2b, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
+  m_Avatar: {fileID: 9000000, guid: 5b30b650332bbbe4183af6fa919e2f2b, type: 3}
+  m_Controller: {fileID: 9100000, guid: 220079dff7c6042b6a7205f7f2d08107, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_HasTransformHierarchy: 1
 --- !u!23 &1304338367
 Renderer:
   m_ObjectHideFlags: 0
@@ -3227,6 +3224,10 @@ Prefab:
       propertyPath: SoundBank
       value: 
       objectReference: {fileID: 553779405}
+    - target: {fileID: 5000000, guid: c0dc783a97f204abfb51cdd82208d47d, type: 2}
+      propertyPath: m_Mass
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6100000, guid: c0dc783a97f204abfb51cdd82208d47d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c0dc783a97f204abfb51cdd82208d47d, type: 2}
