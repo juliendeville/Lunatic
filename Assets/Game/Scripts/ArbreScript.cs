@@ -1,36 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ArbreScript : MonoBehaviour {
+public class ArbreScript : EmoBaseScript {
 	public Vector3 posFinale;
 	public Vector3 rotFinale;
 	public float duration = 1.0f;
 	public GameObject[] enableItems;
 	public GameObject[] disableItems;
+
+	private bool done = false;
+
 	
-	
-	private Transform tr;
-	private GameObject go;
-	
-	void Awake() {
+	public override void Awake() {
+		base.Awake();
 		//mettre en cache les variables
-		tr = this.transform;
-		go = this.gameObject;
 	}
+
 	
-	// Use this for initialization
-	void Start () {
+	public override void SetEmo( Emotion emo ) {
+		base.SetEmo( emo );
+
+		if( emo == Emotion.Colere ) {
+			//arbre en feu avec particules
+
+		} else {
+			//arbre de base
+
+		}
 		
+		if( _emo == Emotion.Colere ) {
+			go.tag = "Action";
+		} else {
+			go.tag = "Decor";
+		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-	
-	void Effect( Emotion emo ) {
+	public override void Effect( ) {
 		//test émotion colère
-		if( emo == Emotion.Colere ) { 
+		if( _emo == Emotion.Colere ) { 
+			done = true;
 			Debug.Log ("arbre killed  " );
 			
 			for( int i=0; i< enableItems.Length; i++ ) {
@@ -39,6 +47,7 @@ public class ArbreScript : MonoBehaviour {
 			for( int i=0; i< disableItems.Length; i++ ) {
 				disableItems[i].SetActive(false);
 			}
+			//remplacer par anim arbre kill ?
 			iTween.MoveTo( go, posFinale, duration);
 			iTween.RotateTo( go, rotFinale, duration );
 		}

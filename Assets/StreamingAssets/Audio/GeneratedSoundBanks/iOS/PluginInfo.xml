@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PluginInfo Project="Lunatica GGJ2014" Platform="iOS" Key="58548FF9-4" Motion="false">
-	<Plugins />
+<PluginInfo Project="Lunatica GGJ2014" Platform="iOS" Key="967557E1-4" Motion="false">
+	<Plugins>
+		<Plugin Name="Wwise Sine" ID="6553602" />
+	</Plugins>
 </PluginInfo>

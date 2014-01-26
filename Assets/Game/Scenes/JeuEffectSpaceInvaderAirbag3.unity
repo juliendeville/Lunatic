@@ -783,9 +783,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 274511043}
+  - 114: {fileID: 274511044}
   m_Layer: 0
   m_Name: Ecureuil
-  m_TagString: Untagged
+  m_TagString: Action
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -806,6 +807,20 @@ Transform:
   - {fileID: 275552180}
   - {fileID: 1272571484}
   m_Father: {fileID: 0}
+--- !u!114 &274511044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 274511042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eafa21a5de04b25a594b06867db833, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trigger: {fileID: 0}
+  Arbre: {fileID: 0}
+  Ecureuil: {fileID: 0}
 --- !u!1 &275552177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,6 +1025,7 @@ MonoBehaviour:
   bankNames:
   - Bank_Amb
   - Bank_Fol
+  - Bank_SFX
 --- !u!4 &338279664
 Transform:
   m_ObjectHideFlags: 0
@@ -1038,7 +1054,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &354537649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1343,8 +1359,8 @@ Transform:
   m_PrefabInternal: {fileID: 1882038827}
   m_GameObject: {fileID: 508313161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 1.5, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalPosition: {x: 5.5, y: 1.5, z: 0}
+  m_LocalScale: {x: 5, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &508313165
@@ -1514,6 +1530,10 @@ Prefab:
       propertyPath: Player
       value: 
       objectReference: {fileID: 794366101}
+    - target: {fileID: 100000, guid: f9d5328c64bd044e498e3e0be2faf3af, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9d5328c64bd044e498e3e0be2faf3af, type: 2}
   m_RootGameObject: {fileID: 354537648}
@@ -3157,6 +3177,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: 06af365ce683f41d291464c730e3ee76, type: 2}
+      propertyPath: bankNames.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 06af365ce683f41d291464c730e3ee76, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3184,6 +3208,10 @@ Prefab:
     - target: {fileID: 400000, guid: 06af365ce683f41d291464c730e3ee76, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 06af365ce683f41d291464c730e3ee76, type: 2}
+      propertyPath: bankNames.Array.data[2]
+      value: Bank_SFX
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06af365ce683f41d291464c730e3ee76, type: 2}
@@ -3966,7 +3994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1407691517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4071,6 +4099,10 @@ Prefab:
       propertyPath: Plateforme
       value: 
       objectReference: {fileID: 2115075516}
+    - target: {fileID: 100000, guid: 3d9f18ca7779545f7a966a928589a209, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3300000, guid: 3d9f18ca7779545f7a966a928589a209, type: 2}
     - {fileID: 2300000, guid: 3d9f18ca7779545f7a966a928589a209, type: 2}
@@ -4696,6 +4728,14 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b1022ebdc5d3f46af8cb17c483b86881, type: 2}
+      propertyPath: m_TagString
+      value: Zone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b1022ebdc5d3f46af8cb17c483b86881, type: 2}
+      propertyPath: m_TagString
+      value: Action
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1022ebdc5d3f46af8cb17c483b86881, type: 2}
   m_RootGameObject: {fileID: 274511042}
@@ -5195,7 +5235,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9fa3407b6c12140b281edd9171c30d63, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9fa3407b6c12140b281edd9171c30d63, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5248,6 +5288,10 @@ Prefab:
     - target: {fileID: 100000, guid: 9fa3407b6c12140b281edd9171c30d63, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9fa3407b6c12140b281edd9171c30d63, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9fa3407b6c12140b281edd9171c30d63, type: 2}
