@@ -1,55 +1,13 @@
 fileFormatVersion: 2
-guid: f88dfcacf5fa44f5bbe7536e99780eef
+guid: d0369f1c0fc734684b4736b008747927
 ModelImporter:
   serializedVersion: 15
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cylinder
-    100004: Cylinder_001
-    100006: Cylinder_002
-    100008: Cylinder_003
-    100010: Cylinder_004
-    100012: Icosphere
-    100014: Icosphere_001
-    100016: Icosphere_002
-    100018: Icosphere_003
     400000: //RootNode
-    400002: Cylinder
-    400004: Cylinder_001
-    400006: Cylinder_002
-    400008: Cylinder_003
-    400010: Cylinder_004
-    400012: Icosphere
-    400014: Icosphere_001
-    400016: Icosphere_002
-    400018: Icosphere_003
-    2300000: Cylinder
-    2300002: Cylinder_001
-    2300004: Cylinder_002
-    2300006: Cylinder_003
-    2300008: Cylinder_004
-    2300010: Icosphere
-    2300012: Icosphere_001
-    2300014: Icosphere_002
-    2300016: Icosphere_003
-    3300000: Cylinder
-    3300002: Cylinder_001
-    3300004: Cylinder_002
-    3300006: Cylinder_003
-    3300008: Cylinder_004
-    3300010: Icosphere
-    3300012: Icosphere_001
-    3300014: Icosphere_002
-    3300016: Icosphere_003
-    4300000: Cylinder_004
-    4300002: Icosphere_002
-    4300004: Icosphere_001
-    4300006: Cylinder_001
-    4300008: Icosphere
-    4300010: Cylinder
-    4300012: Cylinder_002
-    4300014: Cylinder_003
-    4300016: Icosphere_003
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Icosphere
     7400000: Default Take
     9500000: //RootNode
   materials:
