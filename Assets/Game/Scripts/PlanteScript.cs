@@ -3,7 +3,9 @@ using System.Collections;
 
 public class PlanteScript : EmoBaseScript {
 	public GameObject PlanteFinale;
-	
+	public Vector3 scaFinale;
+	public float duration = 2.0f;
+
 	public override void Awake() {
 		base.Awake();
 		//mettre en cache les variables
@@ -30,6 +32,7 @@ public class PlanteScript : EmoBaseScript {
 			
 			Debug.Log (":D  " );
 			//desactive la petite plante
+			iTween.ScaleTo(go,scaFinale,duration);
 			PlanteFinale.SetActive( true );
 			// active la grande
 			go.SetActive( false );
