@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 public class AK
 {
     public class EVENTS
@@ -248,7 +247,7 @@ public class AK
 
 }// public class AK
 
-=======
+
 public class AK
 {
     public class EVENTS
