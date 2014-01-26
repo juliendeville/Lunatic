@@ -5,6 +5,9 @@ public class CameraScript : MonoBehaviour {
 	public GameObject Player;
 	public float dampTime = 0.3f;
 
+
+	public int distanceZ=20;
+
 	private GameObject go;  
 	private Transform tr;
 	private Transform trPlayer;
@@ -30,6 +33,8 @@ public class CameraScript : MonoBehaviour {
 			//on bouge pas sur l'axe Z
 			posTemp = trPlayer.position;
 			posTemp.z = tr.position.z;
+
+			transform.position=new Vector3(Player.transform.position.x,Player.transform.position.y,Player.transform.position.z-distanceZ);
 
 			//déplacement fluide de la cam
 			tr.position = Vector3.SmoothDamp( tr.position, posTemp, ref velocity, dampTime);
