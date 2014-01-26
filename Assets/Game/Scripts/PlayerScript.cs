@@ -57,7 +57,10 @@ public class PlayerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		AkSoundEngine.PostEvent("EVENT_Ambiance_Emotions_Set", gameObject );
+		AkSoundEngine.PostEvent("EVENT_Ambiance_Emotions_Set", go );
+		AkSoundEngine.SetSwitch("SW_Fol_Ground_Type","SW_Fol_Ground_Type_Grass", go );
+		//footstep
+		//AkSoundEngine.PostEvent( "EVENT_Fol_Footstep_Play", go );
 	}
 	
 	// Update is called once per frame
