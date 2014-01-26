@@ -241,6 +241,8 @@
 			<Path>Bank_SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1285425410" Name="EVENT_SFX_Bat_Scream_Play" />
+				<Event Id="2007361309" Name="EVENT_SFX_Forest_Squirrel_Flee_Play" />
+				<Event Id="3386337421" Name="EVENT_SFX_Forest_Squirrel_Squick_Play" />
 				<Event Id="4289308455" Name="EVENT_SFX_Whoosh_Transition_Play" />
 			</IncludedEvents>
 			<IncludedDialogueEvents />
@@ -249,6 +251,26 @@
 				<File Id="1051956659" Language="SFX">
 					<ShortName>SFX\SFX_Cave_Bat_Scream_01.wav</ShortName>
 					<Path>sfx\sfx\sfx_cave_bat_scream_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="409495942" Language="SFX">
+					<ShortName>SFX\SFX_Forest_Squirrel_Squick_01.wav</ShortName>
+					<Path>sfx\sfx\sfx_forest_squirrel_squick_01_ddc98ef4.wem</Path>
+				</File>
+				<File Id="415924312" Language="SFX">
+					<ShortName>SFX\SFX_Forest_Squirrel_Squick_02.wav</ShortName>
+					<Path>sfx\sfx\sfx_forest_squirrel_squick_02_ddc98ef4.wem</Path>
+				</File>
+				<File Id="270130351" Language="SFX">
+					<ShortName>SFX\SFX_Forest_Squirrel_Squick_03.wav</ShortName>
+					<Path>sfx\sfx\sfx_forest_squirrel_squick_03_ddc98ef4.wem</Path>
+				</File>
+				<File Id="286222705" Language="SFX">
+					<ShortName>SFX\SFX_Forest_Squirrel_Squick_04.wav</ShortName>
+					<Path>sfx\sfx\sfx_forest_squirrel_squick_04_ddc98ef4.wem</Path>
+				</File>
+				<File Id="834604187" Language="SFX">
+					<ShortName>SFX\SFX_Forest_Squirrel_Squick_05.wav</ShortName>
+					<Path>sfx\sfx\sfx_forest_squirrel_squick_05_ddc98ef4.wem</Path>
 				</File>
 			</IncludedFullFiles>
 			<IncludedPrefetchFiles />
