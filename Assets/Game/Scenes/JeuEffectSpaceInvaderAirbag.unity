@@ -3962,6 +3962,80 @@ Prefab:
   m_RootGameObject: {fileID: 794366101}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+<<<<<<< HEAD
+=======
+--- !u!1 &1795558881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100024, guid: 0513ec66d01276e4a9e081f3be61b034, type: 3}
+  m_PrefabInternal: {fileID: 2043727047}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1795558882}
+  - 137: {fileID: 1795558883}
+  m_Layer: 0
+  m_Name: Box002
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1795558882
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400024, guid: 0513ec66d01276e4a9e081f3be61b034, type: 3}
+  m_PrefabInternal: {fileID: 2043727047}
+  m_GameObject: {fileID: 1795558881}
+  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalPosition: {x: -.0643884093, y: 0, z: .734413445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 960618268}
+--- !u!137 &1795558883
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13700000, guid: 0513ec66d01276e4a9e081f3be61b034,
+    type: 3}
+  m_PrefabInternal: {fileID: 2043727047}
+  m_GameObject: {fileID: 1795558881}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 0e0b1d68b96ea434692041f78fe49a5b, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300000, guid: 0513ec66d01276e4a9e081f3be61b034, type: 3}
+  m_Bones:
+  - {fileID: 193404576}
+  - {fileID: 1552463981}
+  - {fileID: 474114002}
+  - {fileID: 423703749}
+  - {fileID: 1408966958}
+  - {fileID: 109105383}
+  - {fileID: 105112649}
+  - {fileID: 841772382}
+  - {fileID: 1942129520}
+  - {fileID: 1155542173}
+  - {fileID: 204834184}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 193404576}
+  m_AABB:
+    m_Center: {x: -.514471829, y: .0677590966, z: -.0263253301}
+    m_Extent: {x: .58019489, y: .500453174, z: .253455818}
+  m_DirtyAABB: 0
+>>>>>>> b00efa35b52aeff719c94ebd91cb3010cd349aaf
 --- !u!1 &1796231737
 GameObject:
   m_ObjectHideFlags: 0
