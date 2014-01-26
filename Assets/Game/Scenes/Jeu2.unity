@@ -262,7 +262,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 07278938ac16d9d49abb3af654422a98, type: 2}
+  - {fileID: 2100000, guid: 65867a040e52dc443bd7f81cf52d2e2f, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -992,7 +992,7 @@ Transform:
   m_GameObject: {fileID: 508313161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10, y: 1.5, z: 0}
-  m_LocalScale: {x: 4, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!114 &508313165
@@ -1285,8 +1285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8829cfdf1e1204758978c23ecc266819, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emo: 1
   speed: 5
+  SoundBank: {fileID: 0}
 --- !u!1 &795192997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,7 +2082,7 @@ SpriteRenderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 07278938ac16d9d49abb3af654422a98, type: 2}
+  - {fileID: 2100000, guid: 65867a040e52dc443bd7f81cf52d2e2f, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -2219,7 +2219,7 @@ GameObject:
   - 4: {fileID: 1304338369}
   - 33: {fileID: 1304338368}
   - 23: {fileID: 1304338367}
-  - 95: {fileID: 1304338366}
+  - 111: {fileID: 1304338366}
   - 50: {fileID: 1304338371}
   - 61: {fileID: 1304338370}
   m_Layer: 0
@@ -2229,21 +2229,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!95 &1304338366
-Animator:
-  serializedVersion: 2
+--- !u!111 &1304338366
+Animation:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: 5b30b650332bbbe4183af6fa919e2f2b,
+  m_PrefabParentObject: {fileID: 11100000, guid: 5b30b650332bbbe4183af6fa919e2f2b,
     type: 3}
   m_PrefabInternal: {fileID: 655029582}
   m_GameObject: {fileID: 1304338365}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 5b30b650332bbbe4183af6fa919e2f2b, type: 3}
-  m_Controller: {fileID: 9100000, guid: 220079dff7c6042b6a7205f7f2d08107, type: 2}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 5b30b650332bbbe4183af6fa919e2f2b, type: 3}
+  m_Animations:
+  - {fileID: 7400000, guid: 5b30b650332bbbe4183af6fa919e2f2b, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
+  m_CullingType: 0
 --- !u!23 &1304338367
 Renderer:
   m_ObjectHideFlags: 0
@@ -3503,7 +3504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2035356840
 MonoBehaviour:
   m_ObjectHideFlags: 0
