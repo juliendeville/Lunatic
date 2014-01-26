@@ -1575,8 +1575,8 @@ Rigidbody2D:
     type: 2}
   m_PrefabInternal: {fileID: 1773356777}
   m_GameObject: {fileID: 794366101}
-  m_Mass: 10
-  m_LinearDrag: 0
+  m_Mass: 20
+  m_LinearDrag: 20
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 1
@@ -3798,7 +3798,11 @@ Prefab:
       objectReference: {fileID: 553779405}
     - target: {fileID: 5000000, guid: c0dc783a97f204abfb51cdd82208d47d, type: 2}
       propertyPath: m_Mass
-      value: 10
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: c0dc783a97f204abfb51cdd82208d47d, type: 2}
+      propertyPath: m_LinearDrag
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6100000, guid: c0dc783a97f204abfb51cdd82208d47d, type: 2}
