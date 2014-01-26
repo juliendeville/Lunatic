@@ -18,6 +18,7 @@ public class TriggerEcureuilScript : EmoBaseScript {
 		if( other.tag == "Player" ) {
 			ctrlPlayer.emo = Emotion.Colere;
 			ctrlPlayer.Move( destPlayer, true );
+			AkSoundEngine.PostEvent("EVENT_SFX_Forest_Squirrel_Squick_Play", go );
 		}
 	}
 }

@@ -18,6 +18,7 @@ public class EcureuilScript : EmoBaseScript {
 		if( emo == Emotion.Tristesse ) {
 			//l'ecureuil se cache
 			
+			AkSoundEngine.PostEvent("EVENT_SFX_Forest_Squirrel_Flee_Play", go );
 		} else {
 			//ecureuil qui caillasse
 			
