@@ -3,7 +3,14 @@ using System.Collections;
 
 public class PlanteFinishScript : EmoBaseScript {
 	public GameObject Player;
+
+	public GameObject Plateforme;
+	
+	public Vector3 scaFinale;
+	public float duration = 2.0f;
+
 	public GameObject[] Plateformes;
+
 
 	private PlayerScript ctrlPlayer;
 	private Rigidbody2D riPlayer;
@@ -26,7 +33,7 @@ public class PlanteFinishScript : EmoBaseScript {
 	}
 
 	void Start() {
-		go.SetActive( false );
+		iTween.ScaleTo(go,scaFinale,duration);
 	}
 	
 	public void SetEmo( Emotion emo ) {
