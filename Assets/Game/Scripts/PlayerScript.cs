@@ -9,7 +9,8 @@ public enum Emotion {
 }
 
 public class PlayerScript : MonoBehaviour {
-	public Emotion emo;
+	public float speed = 1.0f;
+	public GameObject SoundBank;
 
 	private GameObject go;
 	private Transform tr;
@@ -20,17 +21,43 @@ public class PlayerScript : MonoBehaviour {
 	private bool waitForUp = false;
 	private Camera cam2D;
 
+	private Vector3 desiredVelocity;
+	private float lastSqrMag;
+	private Vector3 target;
+	private bool moving;
+	
+	private Emotion _emo;
+	public Emotion emo {
+		get {
+			return _emo;
+		}
+		set {
+			if( value == Emotion.Angoisse )
+				AkSoundEngine.SetState( "ST_Emotions_Set", "ST_Emotions_Anxiety" );
+			if( value == Emotion.Colere )
+				AkSoundEngine.SetState( "ST_Emotions_Set", "ST_Emotions_Anger" );
+			if( value == Emotion.Euphorie )
+				AkSoundEngine.SetState( "ST_Emotions_Set", "ST_Emotions_Euphoria" );
+			if( value == Emotion.Tristesse )
+				AkSoundEngine.SetState( "ST_Emotions_Set", "ST_Emotions_Sadness" );
+			_emo = value;
+		}
+	}
+
 	void Awake() {
 		//mettre en cache les variables
 		go = this.gameObject;
 		tr = this.transform;
 		rb = this.rigidbody2D;
 		cam2D = GameObject.Find("Cam2D").GetComponent<Camera>();
+		//sound init !
+
 	}
 
 	// Use this for initialization
 	void Start () {
-	
+		
+		AkSoundEngine.PostEvent("EVENT_Ambiance_Emotions_Set", gameObject );
 	}
 	
 	// Update is called once per frame
@@ -62,8 +89,29 @@ public class PlayerScript : MonoBehaviour {
 				}
 			}
 		}
+		
+		if( moving ) {
+			float sqrMag = (target - transform.position).sqrMagnitude;
+			if ( sqrMag > lastSqrMag )
+			{
+				// rigidbody has reached target and is now moving past it
+				// stop the rigidbody by setting the velocity to zero
+				desiredVelocity = Vector3.zero;
+				EndMove();
+			} 
+			
+			// make sure you update the lastSqrMag
+			lastSqrMag = sqrMag;
+		}
 	
    	}
+
+	void FixedUpdate() 
+	{
+		if( moving ) {
+			rb.velocity = desiredVelocity;
+		}
+	}
 
 	//fonction qui nous déplace
 	public void Move( Vector2 to, bool onlyX ) {
@@ -81,11 +129,14 @@ public class PlayerScript : MonoBehaviour {
 			}
 			*/
 			Debug.Log ("Target Position: " + to.ToString());
+			_Move( to, onlyX );
+			/*
 			if( onlyX ) {
 				iTween.MoveTo( go, iTween.Hash( "x", to.x, "easing", "linear", "oncomplete", "EndMove" ) );
 			} else {
 				iTween.MoveTo( go, iTween.Hash( "x", to.x, "y", to.y, "easing", "linear", "oncomplete", "EndMove" ) );
 			}
+			*/
 		}
 	}
 
@@ -99,13 +150,21 @@ public class PlayerScript : MonoBehaviour {
 
 	void EndMove() {
 		Debug.Log ("Target arrived " );
+		moving = false;
 		//on envoi l'event qu'on est arrivé au pieds de l'objet à activer, on envoi aussi l'émotion actuelle
 		if( objet != null ) {
 			objet.SendMessage( "Effect", emo );
 		}
 	}
 
-	private void _Move( ){
+	private void _Move( Vector2 to, bool onlyX ){
+		moving = true;
+		target = to;
+		target.z = tr.position.z;
+		if( onlyX ) 
+			target.y = tr.position.y;
+		lastSqrMag = Mathf.Infinity;
+		desiredVelocity = (target - tr.position).normalized * speed;
 	}
 
 }
