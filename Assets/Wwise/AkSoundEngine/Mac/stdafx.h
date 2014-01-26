@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //////////////////////////////////////////////////////////////////////
 //
 // Copyright (c) 2006 Audiokinetic Inc. / All Rights Reserved
@@ -8,3 +9,15 @@
 
 
 // TODO: reference additional headers your program requires here
+=======
+//////////////////////////////////////////////////////////////////////
+//
+// Copyright (c) 2006 Audiokinetic Inc. / All Rights Reserved
+//
+//////////////////////////////////////////////////////////////////////
+
+#pragma once
+
+
+// TODO: reference additional headers your program requires here
+>>>>>>> 4e2c135e222557266bc5d964cd0e880d1fc46f39

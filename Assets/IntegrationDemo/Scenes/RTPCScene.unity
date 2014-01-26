@@ -379,8 +379,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d72b89bcad5f425495912ea630fbb5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   basePath: 417564696f2f47656e657261746564536f756e6442616e6b73
   language: 456e676c69736828555329
+=======
+  basePath: Audio/GeneratedSoundBanks
+  language: English(US)
+>>>>>>> 4e2c135e222557266bc5d964cd0e880d1fc46f39
   defaultPoolSize: 4096
   lowerPoolSize: 2048
   streamingPoolSize: 1024
